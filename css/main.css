@@ -1944,6 +1944,7 @@ button {
   line-height: 160%;
   letter-spacing: 0.18px;
   margin-bottom: 21px;
+  color: var(--white);
 }
 
 .swiper-slide-latest-reviews {
