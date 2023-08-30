@@ -989,7 +989,7 @@ button {
 }
 .header__container {
   position: relative;
-  background-color: var(--bl)
+  background-color: var(--bl);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
