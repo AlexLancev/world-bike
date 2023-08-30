@@ -1055,7 +1055,7 @@ button {
   color: var(--orange);
 }
 
-.hero__user-row {
+.header__user-row {
   margin-right: 57px;
 }
 .hero__info {
