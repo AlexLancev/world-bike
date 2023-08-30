@@ -1938,13 +1938,14 @@ button {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   text-overflow: ellipsis;
+  font-family: var(--font-Inter);
+  color: var(--white);
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
   line-height: 160%;
   letter-spacing: 0.18px;
   margin-bottom: 21px;
-  color: var(--white);
 }
 
 .swiper-slide-latest-reviews {
