@@ -1,30 +1,1849 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
 
-@include('partials/head.html')
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Купить велосипеды с доставкой по Москве - интернет магазин World Bike. Гарантия от производителя, профессиональное обслуживание, аксессуары, веломастерская.">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Купить велосипед в Москве - World Bike | Интернет-магазин велосипедов">
+    <meta property="og:description" content="Купить велосипеды с доставкой по Москве - интернет магазин World Bike. Гарантия от производителя, профессиональное обслуживание, аксессуары, веломастерская.">
+    <meta property="og:url" content="https://world-bike.ru/">
+    <meta property="og:site_name" content="Купить велосипед в Москве - World Bike | Интернет-магазин велосипедов">
+    <meta property="article:modified_time" content="2023-04-11T09:06:09+00:00">
+    <link rel="preload" href="fonts/bebasNeue/BebasNeueRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/bebasNeue/BebasNeueCyrillic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/inter/InterLightBETA.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/inter/InterRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/inter/InterMedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/inter/InterBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/montserrat/MontserratSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/montserrat/MontserratBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/openSans/OpenSansRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Купить велосипеды</title>
+  <script defer src="js/main.js"></script>
+</head>
 
 <body class="page__body">
 
   <div class="wrapper">
 
-		@include('partials/header.html')
+        <header class="header">
 
-		<main class="main">
-      @include('partials/partner.html')
-      @include('partials/novelties.html')
-      @include('partials/catalog.html')
-      @include('partials/presentation.html')
-      @include('partials/winter-ride.html')
-      @include('partials/mountain-bikes.html')
-      @include('partials/advantages.html')
-      @include('partials/equipment.html')
-      @include('partials/latest-reviews.html')
-      @include('partials/contacts.html')
+    <div class="header__container" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('img/hero/hero-bg.webp');">
+
+        <div class="site-container">
+
+            <div class="header__inner">
+
+                <div class="logo header__logo">
+                    <img loading="lazy" src="img/svg-icon/logo.svg" class="image" width="87" height="49"
+						alt="Логотип компаний world-bike">
+                </div>
+
+                <div class="header__box">
+
+                    <nav class="nav header__nav" title="Меню сайта">
+                        <ul class="nav__list list-reset">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link nav__link--active">Trade In</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Велосипеды</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Запчасти</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Экипировка</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Аксессуары</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Велостанки</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__user-row user-icon">
+
+                        <button type="button" class="user-icon__link popup-link" aria-label="Поиск по сайту">
+                            <svg class="svg-header-user svg-search">
+                                <use xlink:href="img/sprite.svg#search"></use>
+                            </svg>
+                        </button>
+
+                        <button type="button" class="user-icon__link popup-link" aria-label="Личный кабинет перейти">
+                            <svg class="svg-header-user svg-user1">
+                                <use xlink:href="img/sprite.svg#user1"></use>
+                            </svg>
+                        </button>
+
+                        <button type="button" class="user-icon__link popup-link" aria-label="Товары добавленные в избранное">
+                            <svg class="svg-header-user svg-favorites">
+                                <use xlink:href="img/sprite.svg#favorites"></use>
+                            </svg>
+                        </button>
+
+                        <button type="button" class="user-icon__link popup-link" aria-label="Корзина товаров">
+                            <svg class="svg-header-user svg-basket">
+                                <use xlink:href="img/sprite.svg#basket"></use>
+                            </svg>
+                        </button>
+
+                    </div>
+
+                    <div class="burger-wrapper">
+                        <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+                            <span class="burger__line"></span>
+                        </button>
+                    </div>
+
+                    <div class="menu" data-menu>
+
+                        <div class="menu-wrapper">
+
+                            <div class="tabs tabs-menu" data-tabs="tabs-menu">
+                                <ul class="tabs__nav list-reset">
+
+                                    <li class="tabs__nav-item tabs__nav-item--menu">
+                                        <a href="#" class="tabs__nav-link tabs__nav-link--menu">TRADE IN</a>
+                                    </li>
+
+                                    <li class="tabs__nav-item tabs__nav-item--menu">
+                                        <button class="btn-reset tabs__nav-btn tabs__nav-btn--menu"
+											type="button">Велосипеды</button>
+                                        <div class="tabs__panel tabs__panel--menu">
+                                            <nav class="nav">
+                                                <ul class="nav__list list-reset">
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Горные велосипеды</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Велосипеды для триатлона</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Городские велосипеды</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Двухподвесные велосипеды</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Шоссейные велосипеды</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Электровелосипеды</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Гравийные велосипеды</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Женские велосипеды</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Трековые велосипеды</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Детские велосипеды</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </li>
+
+                                    <li class="tabs__nav-item tabs__nav-item--menu">
+                                        <button class="btn-reset tabs__nav-btn tabs__nav-btn--menu"
+											type="button">Запчасти</button>
+                                        <div class="tabs__panel tabs__panel--menu">
+                                            <nav class="nav">
+                                                <ul class="nav__list list-reset">
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Группы оборудования</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Рамы</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Кассеты</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Манетки/Шифтеры</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Вилки</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Колёса</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Каретки</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Запчасти для электронных групп</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Педали</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Переключатели скоростей</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Покрышки</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Сёдла и штыри</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Системы шатунов</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Тормоза</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Камеры</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Цепи</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </li>
+
+                                    <li class="tabs__nav-item tabs__nav-item--menu">
+                                        <button class="btn-reset tabs__nav-btn tabs__nav-btn--menu"
+											type="button">Экипировка</button>
+                                        <div class="tabs__panel tabs__panel--menu">
+                                            <nav class="nav">
+                                                <ul class="nav__list list-reset">
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Велокуртки</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Велотрусы</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Термобелье</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Велообувь</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Велошлемы</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Велоперчатки</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Очки</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Аксессуары</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </li>
+
+                                    <li class="tabs__nav-item tabs__nav-item--menu">
+                                        <button class="btn-reset tabs__nav-btn tabs__nav-btn--menu"
+											type="button">Аксессуары</button>
+                                        <div class="tabs__panel tabs__panel--menu">
+                                            <nav class="nav">
+                                                <ul class="nav__list list-reset">
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Велокомпьютеры</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Велочехлы</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Инструменты</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Крылья</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Насосы</a>
+                                                    </li>
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Фляги, держатели</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </li>
+
+                                    <li class="tabs__nav-item tabs__nav-item--menu">
+                                        <button class="btn-reset tabs__nav-btn tabs__nav-btn--menu"
+											type="button">Велостанки</button>
+                                        <div class="tabs__panel tabs__panel--menu">
+                                            <nav class="nav">
+                                                <ul class="nav__list list-reset">
+                                                    <li class="nav__item">
+                                                        <a href="#" class="nav__link">Аксессуары для велостанков</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                            <strong class="menu__subtitle">
+                                Доп. Информация
+                            </strong>
+
+                            <nav class="nav" title="Мобильное меню сайта">
+                                <ul class="nav__list list-reset">
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">О нас</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">Веломастерская</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">Хранение</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">Гарантии</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">Пользовательское соглашение</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">Доставка и оплата</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">Блог</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">Контакты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero">
+
+                <h1 class="visually-hidden">Интернет магазин велосипедов</h1>
+
+                <div class="hero__info">
+
+                    <h2 class="hero__subtitle">
+                        Электро <br> велосипеды
+                    </h2>
+
+                    <p class="hero__text">
+                        Cento10 Hybrid — это гоночный велосипед с помогающим педалированию электроприводом, который
+                        устанавливает новый, очень высокий стандарт для данной категории
+                    </p>
+
+                    <a href="#" class="hero__btn btn">
+                        Подробнее
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="header__more more">
+
+        <div class="more__item more__item--extreme">
+            <p class="more__container more__container--extreme">
+                Экстремальное <br> вождение на горном <br> велосипеде
+            </p>
+        </div>
+
+        <div class="more__item more__item--professional">
+            <p class="more__container more__container--professional">
+                Велосипеды <br> для профессионалов
+            </p>
+        </div>
+
+        <div class="more__item more__item--road-bike">
+            <p class="more__container more__container--road-bike">
+                Долгая поездка <br> на шоссейном велосипеде
+            </p>
+        </div>
+
+    </div>
+
+</header>
+
+        <main class="main">
+      <section class="partner">
+    <div class="container-fluid">
+    <h2 class="visually-hidden">Наши партнёры</h2>
+        <div class="swiper swiper--partner">
+            <div class="swiper-wrapper swiper-wrapper--partner">
+
+                <div class="swiper-slide partner__slide">
+                    <picture>
+                        <source srcset="img/partner/partner-1.webp" type="image/webp">
+                        <img loading="lazy" src="img/partner/partner-1.png" class="image" width="295" height="126"
+							alt="Логотип компании TRISTINA">
+                    </picture>
+                </div>
+
+                <div class="swiper-slide partner__slide">
+                    <picture>
+                        <source srcset="img/partner/partner-2.webp" type="image/webp">
+                        <img loading="lazy" src="img/partner/partner-2.png" class="image" width="233" height="76"
+							alt="Логотип компании WAHOO">
+                    </picture>
+                </div>
+
+                <div class="swiper-slide partner__slide">
+                    <picture>
+                        <source srcset="img/partner/partner-3.webp" type="image/webp">
+                        <img loading="lazy" src="img/partner/partner-3.png" class="image" width="244" height="104"
+							alt="Логотип компании TREK">
+                    </picture>
+                </div>
+
+                <div class="swiper-slide partner__slide">
+                    <picture>
+                        <source srcset="img/partner/partner-4.webp" type="image/webp">
+                        <img loading="lazy" src="img/partner/partner-4.png" class="image" width="315" height="128"
+							alt="Логотип компании TOPEAK">
+                    </picture>
+                </div>
+
+                <div class="swiper-slide partner__slide">
+                    <picture>
+                        <source srcset="img/partner/partner-5.webp" type="image/webp">
+                        <img loading="lazy" src="img/partner/partner-5.png" class="image" width="125" height="126"
+							alt="Логотип компании TACX">
+                    </picture>
+                </div>
+
+                <div class="swiper-slide partner__slide">
+                    <picture>
+                        <source srcset="img/partner/partner-6.webp" type="image/webp">
+                        <img loading="lazy" src="img/partner/partner-6.png" class="image" width="245" height="62"
+							alt="Логотип компании SRAM">
+                    </picture>
+                </div>
+
+                <div class="swiper-slide partner__slide">
+                    <picture>
+                        <source srcset="img/partner/partner-7.webp" type="image/webp">
+                        <img loading="lazy" src="img/partner/partner-7.png" class="image" width="267" height="206"
+							alt="Логотип компании SHIMANO">
+                    </picture>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+      <div class="novelties">
+
+    <div class="site-container">
+
+        <h2 class="novelties__subtile">
+            Новинки
+        </h2>
+
+        <div class="swiper swiper--novelties">
+
+            <div class="swiper-wrapper swiper-wrapper-novelties">
+
+                <div class="swiper-slide">
+
+                    <article class="card" style="background-image: url('img/novelties/novelties-itali.png');">
+
+                        <div class="card__header">
+                            <span class="card__status card__status--sold-out">
+                                Распродано
+                            </span>
+                        </div>
+
+                        <picture class="card-model">
+                            <source srcset="img/novelties/novelties-bg-1.webp" type="image/webp">
+                            <img loading="lazy" src="img/novelties/novelties-bg-1.png" class="card-model__image"
+								width="368" height="250" alt="Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021">
+                        </picture>
+
+                        <div class="card__moodel">
+                            <h3 class="card__model-name">
+                                Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021
+                            </h3>
+                            <span class="card__model-prices">
+                                684 840 ₽
+                            </span>
+                        </div>
+
+                        <button class="btn card__btn card__btn--track" type="button" dara-href="#">
+                            <svg class="cursor-click cursor-click--track">
+                                <use xlink:href="img/sprite.svg#cursor-click"></use>
+                            </svg>
+
+                            <span class="card__btn-text card__btn-text--track">
+                                Отслеживать
+                            </span>
+                        </button>
+
+                    </article>
+
+                </div>
+
+                <div class="swiper-slide">
+
+                    <article class="card" style="background-image: url('img/novelties/novelties-usa.png');">
+
+                        <div class="card__header">
+                            <span class="card__status card__status--sold-out">
+                                Распродано
+                            </span>
+                        </div>
+
+                        <picture class="card-model">
+                            <source srcset="img/novelties/novelties-bg-2.webp" type="image/webp">
+                            <img loading="lazy" src="img/novelties/novelties-bg-2.png" class="card-model__image"
+								width="368" height="250" alt="Trek Verve 2 Disc Lithium Grey HYBD 2022">
+                        </picture>
+
+                        <div class="card__moodel">
+                            <h3 class="card__model-name">
+                                Trek Verve 2 Disc Lithium Grey HYBD 2022
+                            </h3>
+                            <span class="card__model-prices">
+                                89 300 ₽
+                            </span>
+                        </div>
+
+                        <button class="btn card__btn card__btn--track" type="button" dara-href="#">
+                            <svg class="cursor-click cursor-click--track">
+                                <use xlink:href="img/sprite.svg#cursor-click"></use>
+                            </svg>
+
+                            <span class="card__btn-text card__btn-text--track">
+                                Отслеживать
+                            </span>
+                        </button>
+
+                    </article>
+
+                </div>
+
+                <div class="swiper-slide">
+
+                    <article class="card" style="background-image: url('img/novelties/novelties-usa.png');">
+
+                        <div class="card__header">
+                            <span class="card__status card__status--stock">
+                                В наличии
+                            </span>
+                        </div>
+
+                        <picture class="card-model">
+                            <source srcset="img/novelties/novelties-bg-3.webp" type="image/webp">
+                            <img loading="lazy" src="img/novelties/novelties-bg-3.png" class="card-model__image"
+								width="368" height="250" alt="Trek Marlin 7 Matte Nautical Navy Matte Anth ATB 29 2022">
+                        </picture>
+
+                        <div class="card__moodel">
+                            <h3 class="card__model-name">
+                                Trek Marlin 7 Matte Nautical Navy Matte Anth ATB 29 2022
+                            </h3>
+                            <span class="card__model-prices">
+                                115 000 ₽
+                            </span>
+                        </div>
+
+                        <button class="btn card__btn" type="button" dara-href="#">
+                            <svg class="cursor-click">
+                                <use xlink:href="img/sprite.svg#cursor-click"></use>
+                            </svg>
+
+                            <span class="card__btn-text">
+                                В 1 клик
+                            </span>
+                        </button>
+
+                    </article>
+
+                </div>
+
+                <div class="swiper-slide">
+
+                    <article class="card" style="background-image: url('img/novelties/novelties-usa.png');">
+
+                        <div class="card__header">
+                            <span class="card__status card__status--stock">
+                                В наличии
+                            </span>
+                        </div>
+
+                        <picture class="card-model">
+                            <source srcset="img/novelties/novelties-bg-3.webp" type="image/webp">
+                            <img loading="lazy" src="img/novelties/novelties-bg-3.png" class="card-model__image"
+								width="368" height="250" alt="Trek Marlin 7 Matte Nautical Navy Matte Anth ATB 29 2022">
+                        </picture>
+
+                        <div class="card__moodel">
+                            <h3 class="card__model-name">
+                                Trek Marlin 7 Matte Nautical Navy Matte Anth ATB 29 2022
+                            </h3>
+                            <span class="card__model-prices">
+                                115 000 ₽
+                            </span>
+                        </div>
+
+                        <button class="btn card__btn" type="button" dara-href="#">
+                            <svg class="cursor-click">
+                                <use xlink:href="img/sprite.svg#cursor-click"></use>
+                            </svg>
+
+                            <span class="card__btn-text">
+                                В 1 клик
+                            </span>
+                        </button>
+
+                    </article>
+
+                </div>
+
+                <div class="swiper-slide">
+
+                    <article class="card" style="background-image: url('img/novelties/novelties-usa.png');">
+
+                        <div class="card__header">
+                            <span class="card__status card__status--stock">
+                                В наличии
+                            </span>
+                        </div>
+
+                        <picture class="card-model">
+                            <source srcset="img/novelties/novelties-bg-3.webp" type="image/webp">
+                            <img loading="lazy" src="img/novelties/novelties-bg-3.png" class="card-model__image"
+								width="368" height="250" alt="Trek Marlin 7 Matte Nautical Navy Matte Anth ATB 29 2022">
+                        </picture>
+
+                        <div class="card__moodel">
+                            <h3 class="card__model-name">
+                                Trek Marlin 7 Matte Nautical Navy Matte Anth ATB 29 2022
+                            </h3>
+                            <span class="card__model-prices">
+                                115 000 ₽
+                            </span>
+                        </div>
+
+                        <button class="btn card__btn" type="button" dara-href="#">
+                            <svg class="cursor-click">
+                                <use xlink:href="img/sprite.svg#cursor-click"></use>
+                            </svg>
+
+                            <span class="card__btn-text">
+                                В 1 клик
+                            </span>
+                        </button>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <button class="swiper-button-prev" aria-label="Перелестнуть на 1 слайдер в начало списка"></button>
+            <button class="swiper-button-next" aria-label="Перелестнуть на 1 слайдер в конец списка"></button>
+
+        </div>
+
+        <a href="#" class="novelties__view-link view-link">
+            Показать все
+        </a>
+
+    </div>
+
+</div>
+
+      <section class="catalog">
+
+    <div class="site-container">
+
+        <h2 class="catalog__subtitle">
+            Каталог
+        </h2>
+
+        <div class="catalog__grid">
+
+            <a href="./catalog-page.html" class="catalog__grid-item catalog__grid-item--bicycles bicycles"
+				style="background-image: url('img/catalog/bicycles-bg.png');">
+                <h3 class="catalog__grid-head">
+                    Велосипеды
+                </h3>
+            </a>
+
+            <a href="./catalog-page.html" class="catalog__grid-item catalog__grid-item--trade-in trade-in"
+				style="background-image: url('img/catalog/trade-in-bg.png');">
+                <h3 class="catalog__grid-head">
+                    Trade-in
+                </h3>
+            </a>
+
+            <a href="./catalog-page.html" class="catalog__grid-item catalog__grid-item--spare-parts spare-parts"
+				style="background-image: url('img/catalog/spare-parts-bg.png');">
+                <h3 class="catalog__grid-head">
+                    Запчасти
+                </h3>
+            </a>
+
+            <a href="./catalog-page.html" class="catalog__grid-item catalog__grid-item--equipment equipment-item"
+				style="background-image: url('img/catalog/equipment-bg.png');">
+                <h3 class="catalog__grid-head">
+                    Экипировка
+                </h3>
+            </a>
+
+            <a href="./catalog-page.html" class="catalog__grid-item catalog__grid-item--accessories accessories"
+				style="background-image: url('img/catalog/accessories-bg.png');">
+                <h3 class="catalog__grid-head">
+                    Аксессуары
+                </h3>
+            </a>
+
+            <a href="./catalog-page.html" class="catalog__grid-item catalog__grid-item--bicycle-stands bicycle-stands"
+				style="background-image: url('img/catalog/bike-racks-bg.png');">
+                <h3 class="catalog__grid-head">
+                    Велостанки
+                </h3>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+      <section class="presentation">
+
+  <div class="site-container">
+
+    <div class="presentation__header">
+
+      <h2 class="presentation__subtitle">
+        Ничего не сможет <br> остановить вас
+      </h2>
+
+      <div class="presentation__description">
+        <p class="presentation__text">
+          Наша компания специализируется на продаже товаров для велосипедного спорта — велосипедов, запасных
+          частей, аксессуаров и различного спортивного инвентаря для активного спорта и отдыха.
+        </p>
+
+        <a href="#" class="presentation__more-link hover-link">
+          Подробнее
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="presentation__main">
+    <div class="presentation__bg" style="background-image: url('img/presentation/presentation-bg.webp');">
+      <button type="button" class="presentation__image-play" aria-label="Воспроизвести видео">
+        <img loading="lazy" src="img/svg-icon/presentation-play.svg" class="presentation__img" width="121" height="121"
+          aria-hidden="true" alt="">
+      </button>
+    </div>
+    <div class="presentation__video"></div>
+  </div>
+
+  <div class="presentation__footer">
+
+    <div class="site-container">
+
+      <ul class="presentation__list list-reset">
+
+        <li class="presentation__item">
+          <h3 class="presentation__head" style="background-image: url('img/svg-icon/presentation-item-1.svg');">
+            Европейские бренды
+          </h3>
+          <p class="presentation__info">
+            Представляем десятки европейских брендов
+          </p>
+        </li>
+
+        <li class="presentation__item presentation__item--guarantee">
+          <h3 class="presentation__head" style="background-image: url('img/svg-icon/presentation-item-2.svg');">
+            Вечная гарантия
+          </h3>
+          <p class="presentation__info">
+            На некоторые бренды предоставляем пожизненную гарантию
+          </p>
+        </li>
+
+        <li class="presentation__item presentation__item--setting">
+          <h3 class="presentation__head" style="background-image: url('img/svg-icon/presentation-item-3.svg');">
+            Предпродажная настройка
+          </h3>
+          <p class="presentation__info">
+            Специалисты настроят ваш велосипед наилучшим образом
+          </p>
+        </li>
+
+        <li class="presentation__item">
+          <h3 class="presentation__head" style="background-image: url('img/svg-icon/presentation-item-4.svg');">
+            Доставка за 24 часа
+          </h3>
+          <p class="presentation__info">
+            Доставляем товар всеми популярными транспортными компаниями
+          </p>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+      <section class="winter-ride">
+
+  <div class="container-fluid" style="background-image: url('img/winter-ride/winter-ride-bg.png');">
+
+    <div class="container-right">
+      <h2 class="winter-ride__subtitle">
+        Лучшие модели <br> для зимней <br> езды
+      </h2>
+      <div class="swiper swiper--winter">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <article class="card" style="background-image: url('img/winter-ride/winter-ride-italy.png');">
+
+              <div class="card__header">
+                <span class="card__status card__status--sold-out">
+                  Распродано
+                </span>
+              </div>
+
+              <picture class="card-model">
+                <source srcset="img/winter-ride/winter-ride-model-1.webp" type="image/webp">
+                <img loading="lazy" src="img/winter-ride/winter-ride-model-1.png" class="card-model__image" width="368"
+                  height="250" alt="Bianchi ARCADEX GRX600 40 Синий 2022">
+              </picture>
+
+              <div class="card__moodel">
+                <h3 class="card__model-name">
+                  Bianchi ARCADEX GRX600 40 Синий <br> 2022
+                </h3>
+                <span class="card__model-prices">
+                  351 890 ₽
+                </span>
+              </div>
+
+              <button class="btn card__btn card__btn--track" type="button" dara-href="#">
+                <svg class="cursor-click cursor-click--track">
+                  <use xlink:href="img/sprite.svg#cursor-click"></use>
+                </svg>
+
+                <span class="card__btn-text card__btn-text--track">
+                  Отслеживать
+                </span>
+              </button>
+
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="card" style="background-image: url('img/winter-ride/winter-ride-usa.png');">
+
+              <div class="card__header">
+                <span class="card__status card__status--sold-out">
+                  Распродано
+                </span>
+              </div>
+
+              <picture class="card-model">
+                <source srcset="img/winter-ride/winter-ride-model-2.webp" type="image/webp">
+                <img loading="lazy" src="img/winter-ride/winter-ride-model-2.png" class="card-model__image" width="368"
+                  height="250" alt="Trek Verve 1 Disc Low Step Era White HYBD 2022">
+              </picture>
+
+              <div class="card__moodel">
+                <h3 class="card__model-name">
+                  Trek Verve 1 Disc Low Step Era White <br> HYBD 2022
+                </h3>
+                <span class="card__model-prices">
+                  77 300 ₽
+                </span>
+              </div>
+
+              <button class="btn card__btn card__btn--track" type="button" dara-href="#">
+                <svg class="cursor-click cursor-click--track">
+                  <use xlink:href="img/sprite.svg#cursor-click"></use>
+                </svg>
+
+                <span class="card__btn-text card__btn-text--track">
+                  Отслеживать
+                </span>
+              </button>
+
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="card" style="background-image: url('img/winter-ride/winter-ride-usa.png');">
+
+              <div class="card__header">
+                <span class="card__status card__status--sold-out">
+                  Распродано
+                </span>
+              </div>
+
+              <picture class="card-model">
+                <source srcset="img/winter-ride/winter-ride-model-3.webp" type="image/webp">
+                <img loading="lazy" src="img/winter-ride/winter-ride-model-3.png" class="card-model__image" width="368"
+                  height="250" alt="Trek Dual Sport 1 Quicksilver Hybrid 2022">
+              </picture>
+
+              <div class="card__moodel">
+                <h3 class="card__model-name">
+                  Trek Dual Sport 1 Quicksilver Hybrid <br> 2022
+                </h3>
+                <span class="card__model-prices">
+                  78 000 ₽
+                </span>
+              </div>
+
+              <button class="btn card__btn card__btn--track" type="button" dara-href="#">
+                <svg class="cursor-click cursor-click--track">
+                  <use xlink:href="img/sprite.svg#cursor-click"></use>
+                </svg>
+
+                <span class="card__btn-text card__btn-text--track">
+                  Отслеживать
+                </span>
+              </button>
+
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="card" style="background-image: url('img/novelties/novelties-usa.png');">
+
+              <div class="card__header">
+                <span class="card__status card__status--stock">
+                  В наличии
+                </span>
+              </div>
+
+              <picture class="card-model">
+                <source srcset="img/novelties/novelties-bg-3.webp" type="image/webp">
+                <img loading="lazy" src="img/novelties/novelties-bg-3.png" class="card-model__image" width="368"
+                  height="250" alt="Trek Marlin 7 Matte Nautical Navy Matte Anth ATB 29 2022">
+              </picture>
+
+              <div class="card__moodel">
+                <h3 class="card__model-name">
+                  Trek Marlin 7 Matte Nautical Navy Matte Anth ATB 29 2022
+                </h3>
+                <span class="card__model-prices">
+                  115 000 ₽
+                </span>
+              </div>
+
+              <button class="btn card__btn card__btn--track" type="button" dara-href="#">
+                <svg class="cursor-click cursor-click--track">
+                  <use xlink:href="img/sprite.svg#cursor-click"></use>
+                </svg>
+
+                <span class="card__btn-text card__btn-text--track">
+                  Отслеживать
+                </span>
+              </button>
+
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="card" style="background-image: url('img/novelties/novelties-usa.png');">
+
+              <div class="card__header">
+                <span class="card__status card__status--stock">
+                  В наличии
+                </span>
+              </div>
+
+              <picture class="card-model">
+                <source srcset="img/novelties/novelties-bg-3.webp" type="image/webp">
+                <img loading="lazy" src="img/novelties/novelties-bg-3.png" class="card-model__image" width="368"
+                  height="250" alt="Trek Marlin 7 Matte Nautical Navy Matte Anth ATB 29 2022">
+              </picture>
+
+              <div class="card__moodel">
+                <h3 class="card__model-name">
+                  Trek Marlin 7 Matte Nautical Navy Matte Anth ATB 29 2022
+                </h3>
+                <span class="card__model-prices">
+                  115 000 ₽
+                </span>
+              </div>
+
+              <button class="btn card__btn card__btn--track" type="button" dara-href="#">
+                <svg class="cursor-click cursor-click--track">
+                  <use xlink:href="img/sprite.svg#cursor-click"></use>
+                </svg>
+
+                <span class="card__btn-text card__btn-text--track">
+                  Отслеживать
+                </span>
+              </button>
+
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="card" style="background-image: url('img/novelties/novelties-usa.png');">
+
+              <div class="card__header">
+                <span class="card__status card__status--stock">
+                  В наличии
+                </span>
+              </div>
+
+              <picture class="card-model">
+                <source srcset="img/novelties/novelties-bg-3.webp" type="image/webp">
+                <img loading="lazy" src="img/novelties/novelties-bg-3.png" class="card-model__image" width="368"
+                  height="250" alt="Trek Marlin 7 Matte Nautical Navy Matte Anth ATB 29 2022">
+              </picture>
+
+              <div class="card__moodel">
+                <h3 class="card__model-name">
+                  Trek Marlin 7 Matte Nautical Navy Matte Anth ATB 29 2022
+                </h3>
+                <span class="card__model-prices">
+                  115 000 ₽
+                </span>
+              </div>
+
+              <button class="btn card__btn card__btn--track" type="button" dara-href="#">
+                <svg class="cursor-click cursor-click--track">
+                  <use xlink:href="img/sprite.svg#cursor-click"></use>
+                </svg>
+
+                <span class="card__btn-text card__btn-text--track">
+                  Отслеживать
+                </span>
+              </button>
+
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+      <section class="mountain-bikes">
+
+    <div class="site-container">
+
+        <h2 class="mountain-bikes__subtitle">
+            Горные <br> велосипеды
+        </h2>
+
+        <div class="mountain-bikes__inner">
+
+      <div class="slider-container" data-mobile="false">
+        <ul class="mountain-bikes__list list-reset swiper-wrapper">
+
+          <li class="mountain-bikes__item cards"
+            style="background-image: url('img/svg-icon/mountain-bikes-item-1.svg');">
+            <div class="mountain-bikes__header">
+              <h3 class="mountain-bikes__head">Рама</h3>
+            </div>
+            <p class="mountain-bikes__item-text">
+              Алюминиевая рама горного велосипеда очень долговечна и служит многие годы.
+            </p>
+          </li>
+
+          <li class="mountain-bikes__item cards"
+            style="background-image: url('img/svg-icon/mountain-bikes-item-2.svg');">
+            <div class="mountain-bikes__header">
+              <h3 class="mountain-bikes__head">Бортовой <br> компьютер</h3>
+            </div>
+            <p class="mountain-bikes__item-text">
+              Показывает немаловажные характеристики (к примеру, скорость, километраж, и тд).
+            </p>
+          </li>
+
+          <li class="mountain-bikes__item cards"
+            style="background-image: url('img/svg-icon/mountain-bikes-item-3.svg');">
+            <div class="mountain-bikes__header">
+              <h3 class="mountain-bikes__head">Трансмиссия</h3>
+            </div>
+            <p class="mountain-bikes__item-text">
+              Хорошоя трансмиссия сбережет силы, и принесет удовольствие от катания.
+            </p>
+          </li>
+
+          <li class="mountain-bikes__item cards"
+            style="background-image: url('img/svg-icon/mountain-bikes-item-4.svg');">
+            <div class="mountain-bikes__header">
+              <h3 class="mountain-bikes__head">Оборудование</h3>
+            </div>
+            <p class="mountain-bikes__item-text">
+              Переключатели скоростей, шатуны, втулки, кассеты, педали, тормозная система.
+            </p>
+          </li>
+
+        </ul>
+      </div>
+
+            <div class="mountain-bikes__info">
+
+                <div class="mountain-bikes__bg"
+					style="background-image: url('img/mountain-bikes/mountain-bikes-bg.webp');"></div>
+
+        <div class="mountain-bikes__info-container">
+
+          <p class="mountain-bikes__text">
+            Горный велосипед несмотря на свое название часто и активно используются в условиях города, так как
+            обладает рядом характеристик, позволяющих сделать велопрогулку максимально приятной и комфортной
+          </p>
+
+          <a href="#" class="mountain-bikes__link btn">
+            Каталог
+          </a>
+
+        </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+      <section class="advantages">
+
+    <div class="site-container">
+        <h2 class="advantages__subtitle">
+            Преимущества
+        </h2>
+    </div>
+
+    <div class="advantages__inner">
+
+        <div class="row-left">
+            <div class="advantages__bg" style="background-image: url('img/advantages/advantages-bg-1.png');"></div>
+        </div>
+
+        <div class="row-center">
+            <div class="slider-container" data-mobile="false">
+
+        <ul class="advantages__list list-reset swiper-wrapper">
+
+          <li class="advantages__item cards">
+            <h3 class="advantages__head">
+              БЕСПЛАТНАЯ ДОСТАВКА
+            </h3>
+            <p class="advantages__text">
+              Мы пользуемся всеми популярными видами доставки
+            </p>
+            <a href="#" class="advantages__more">
+              Подробнее
+            </a>
+          </li>
+
+          <li class="advantages__item cards">
+            <h3 class="advantages__head">
+              ОБМЕН И ВОЗВРАТ
+            </h3>
+            <p class="advantages__text">
+              Все товары обеспечены фирменной гарантией фирм-производителей
+            </p>
+            <a href="#" class="advantages__more">
+              Подробнее
+            </a>
+          </li>
+
+          <li class="advantages__item cards">
+            <h3 class="advantages__head">
+              ДОП. ОБСЛУЖИВАНИЕ
+            </h3>
+            <p class="advantages__text">
+              Мы выполняем ремонт велосипеда любой сложности
+            </p>
+            <a href="#" class="advantages__more">
+              Подробнее
+            </a>
+          </li>
+
+          <li class="advantages__item cards">
+            <h3 class="advantages__head">
+              ОНЛАЙН ОПЛАТА
+            </h3>
+            <p class="advantages__text">
+              Для удобства вы можете оплатить товар банковской картой через сайт
+            </p>
+            <a href="#" class="advantages__more">
+              Подробнее
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+        </div>
+
+        <div class="row-right">
+            <div class="advantages__row" style="background-image: url('img/advantages/advantages-bg-repeat.png');">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+      <section class="equipment">
+
+    <div class="site-container">
+
+        <h2 class="equipment__subtitle">
+            Экипировка
+        </h2>
+
+        <div class="swiper swiper-equipment">
+
+            <div class="swiper-wrapper swiper-wrapper-equipment">
+
+                <div class="swiper-slide swiper-slide-equipment">
+                    <article class="card">
+
+                        <div class="card__header">
+                            <span class="card__status card__status--sold-out">
+                                Распродано
+                            </span>
+                        </div>
+
+                        <picture class="card-model">
+                            <source srcset="img/equipment/equipment-model-1.webp" type="image/webp">
+                            <img loading="lazy" src="img/equipment/equipment-model-1.png" class="card-model__image"
+								width="368" height="250" alt="Rudy Project Airstorm Lime Fluo White Shiny">
+                        </picture>
+
+                        <div class="card__moodel">
+                            <h3 class="card__model-name">
+                                Rudy Project Airstorm Lime Fluo White Shiny
+                            </h3>
+                            <div class="card__prices">
+                                <span class="card__model-prices">
+                                    7 990 ₽
+                                </span>
+                                <span class="card__old-price">
+                                    10 627 ₽
+                                </span>
+                            </div>
+                        </div>
+
+                        <button class="btn card__btn card__btn--track" type="button" dara-href="#">
+                            <svg class="cursor-click cursor-click--track">
+                                <use xlink:href="img/sprite.svg#cursor-click"></use>
+                            </svg>
+
+                            <span class="card__btn-text card__btn-text--track">
+                                Отслеживать
+                            </span>
+                        </button>
+
+                    </article>
+                </div>
+
+                <div class="swiper-slide swiper-slide-equipment">
+                    <article class="card">
+
+                        <div class="card__header">
+                            <span class="card__status card__status--sold-out">
+                                Распродано
+                            </span>
+                        </div>
+
+                        <picture class="card-model">
+                            <source srcset="img/equipment/equipment-model-2.webp" type="image/webp">
+                            <img loading="lazy" src="img/equipment/equipment-model-2.png" class="card-model__image"
+								width="368" height="250" alt="Rudy Project Protera Blue Orange Matt">
+                        </picture>
+
+                        <div class="card__moodel">
+                            <h3 class="card__model-name">
+                                Rudy Project Protera Blue Orange Matt
+                            </h3>
+                            <div class="card__prices">
+                                <span class="card__model-prices">
+                                    9 420 ₽
+                                </span>
+                                <span class="card__old-price">
+                                    12 520 ₽
+                                </span>
+                            </div>
+                        </div>
+
+                        <button class="btn card__btn card__btn--track" type="button" dara-href="#">
+                            <svg class="cursor-click cursor-click--track">
+                                <use xlink:href="img/sprite.svg#cursor-click"></use>
+                            </svg>
+
+                            <span class="card__btn-text card__btn-text--track">
+                                Отслеживать
+                            </span>
+                        </button>
+
+                    </article>
+                </div>
+
+                <div class="swiper-slide swiper-slide-equipment">
+                    <article class="card">
+
+                        <div class="card__header">
+                            <span class="card__status card__status--sold-out">
+                                Распродано
+                            </span>
+                        </div>
+
+                        <picture class="card-model">
+                            <source srcset="img/equipment/equipment-model-3.webp" type="image/webp">
+                            <img loading="lazy" src="img/equipment/equipment-model-3.png" class="card-model__image"
+								width="368" height="250" alt="Rudy Project Avenger Titanium Lime Matt">
+                        </picture>
+
+                        <div class="card__moodel">
+                            <h3 class="card__model-name">
+                                Rudy Project Avenger Titanium Lime <br> Matt
+                            </h3>
+                            <div class="card__prices">
+                                <span class="card__model-prices">
+                                    9 200 ₽
+                                </span>
+                                <span class="card__old-price">
+                                    12 236 ₽
+                                </span>
+                            </div>
+                        </div>
+
+                        <button class="btn card__btn card__btn--track" type="button" dara-href="#">
+                            <svg class="cursor-click cursor-click--track">
+                                <use xlink:href="img/sprite.svg#cursor-click"></use>
+                            </svg>
+
+                            <span class="card__btn-text card__btn-text--track">
+                                Отслеживать
+                            </span>
+                        </button>
+
+                    </article>
+                </div>
+
+                <div class="swiper-slide swiper-slide-equipment">
+                    <article class="card">
+
+                        <div class="card__header">
+                            <span class="card__status card__status--sold-out">
+                                Распродано
+                            </span>
+                        </div>
+
+                        <picture class="card-model">
+                            <source srcset="img/equipment/equipment-model-3.webp" type="image/webp">
+                            <img loading="lazy" src="img/equipment/equipment-model-3.png" class="card-model__image"
+								width="368" height="250" alt="Rudy Project Avenger Titanium Lime Matt">
+                        </picture>
+
+                        <div class="card__moodel">
+                            <h3 class="card__model-name">
+                                Rudy Project Avenger Titanium Lime <br> Matt
+                            </h3>
+                            <div class="card__prices">
+                                <span class="card__model-prices">
+                                    9 200 ₽
+                                </span>
+                                <span class="card__old-price">
+                                    12 236 ₽
+                                </span>
+                            </div>
+                        </div>
+
+                        <button class="btn card__btn card__btn--track" type="button" dara-href="#">
+                            <svg class="cursor-click cursor-click--track">
+                                <use xlink:href="img/sprite.svg#cursor-click"></use>
+                            </svg>
+
+                            <span class="card__btn-text card__btn-text--track">
+                                Отслеживать
+                            </span>
+                        </button>
+
+                    </article>
+                </div>
+
+                <div class="swiper-slide swiper-slide-equipment">
+                    <article class="card">
+
+                        <div class="card__header">
+                            <span class="card__status card__status--sold-out">
+                                Распродано
+                            </span>
+                        </div>
+
+                        <picture class="card-model">
+                            <source srcset="img/equipment/equipment-model-3.webp" type="image/webp">
+                            <img loading="lazy" src="img/equipment/equipment-model-3.png" class="card-model__image"
+								width="368" height="250" alt="Rudy Project Avenger Titanium Lime Matt">
+                        </picture>
+
+                        <div class="card__moodel">
+                            <h3 class="card__model-name">
+                                Rudy Project Avenger Titanium Lime <br> Matt
+                            </h3>
+                            <div class="card__prices">
+                                <span class="card__model-prices">
+                                    9 200 ₽
+                                </span>
+                                <span class="card__old-price">
+                                    12 236 ₽
+                                </span>
+                            </div>
+                        </div>
+
+                        <button class="btn card__btn card__btn--track" type="button" dara-href="#">
+                            <svg class="cursor-click cursor-click--track">
+                                <use xlink:href="img/sprite.svg#cursor-click"></use>
+                            </svg>
+
+                            <span class="card__btn-text card__btn-text--track">
+                                Отслеживать
+                            </span>
+                        </button>
+
+                    </article>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <button class="swiper-button-prev" aria-label="Перелестнуть на 1 слайдер в начало списка"></button>
+            <button class="swiper-button-next" aria-label="Перелестнуть на 1 слайдер в конец списка"></button>
+
+        </div>
+
+        <a href="#" class="equipment__view-link view-link">
+            Показать все
+        </a>
+
+    </div>
+
+</section>
+
+      <section class="latest-reviews">
+
+  <div class="container-right">
+    <h2 class="latest-reviews__subtitle">
+      Последние обзоры
+    </h2>
+
+    <div class="swiper swiper-latest-reviews">
+
+      <div class="swiper-wrapper swiper-wrapper-latest-reviews">
+
+        <div class="swiper-slide swiper-slide-latest-reviews">
+          <article class="card-reviews"
+            style="background-image: url('img/latest-reviews/latest-reviews-bg-1.webp');">
+
+            <div class="card-reviews__info">
+
+              <time class="card-reviews__time" datetime="2023-01-25">25.01.2023</time>
+
+              <span class="card-reviews__hashtag">
+                #обзор
+              </span>
+
+              <h3 class="card-reviews__text">
+                BMC Kaius 01 идеальный гоночный гравийный велосипед
+              </h3>
+
+              <a href="#" class="card-reviews__more more-link hover-link">
+                Подробнее
+              </a>
+
+            </div>
+
+          </article>
+        </div>
+
+        <div class="swiper-slide swiper-slide-latest-reviews">
+          <article class="card-reviews"
+            style="background-image: url('img/latest-reviews/latest-reviews-bg-2.webp');">
+
+            <div class="card-reviews__info">
+
+              <time class="card-reviews__time" datetime="2023-01-24">24.01.2023</time>
+
+              <span class="card-reviews__hashtag">
+                #обзор
+              </span>
+
+              <h3 class="card-reviews__text">
+                Первые поездки на новой гоночной ракете Wilier Urta SLR 100 mm XC MTB, всего 9,8 кг!
+              </h3>
+
+              <a href="#" class="card-reviews__more more-link hover-link">
+                Подробнее
+              </a>
+
+            </div>
+
+          </article>
+        </div>
+
+        <div class="swiper-slide swiper-slide-latest-reviews">
+          <article class="card-reviews"
+            style="background-image: url('img/latest-reviews/latest-reviews-bg-3.webp');">
+
+            <div class="card-reviews__info">
+
+              <time class="card-reviews__time" datetime="2023-01-24">24.01.2023</time>
+
+              <span class="card-reviews__hashtag">
+                #обзор
+              </span>
+
+              <h3 class="card-reviews__text">
+                Все новые гоночные велосипеды BMC Fourstroke XC оснащены волшебным подседельным
+                штыр…
+              </h3>
+
+              <a href="#" class="card-reviews__more more-link hover-link">
+                Подробнее
+              </a>
+
+            </div>
+
+          </article>
+        </div>
+
+        <div class="swiper-slide swiper-slide-latest-reviews">
+          <article class="card-reviews"
+            style="background-image: url('img/latest-reviews/latest-reviews-bg-4.webp');">
+
+            <div class="card-reviews__info">
+
+              <time class="card-reviews__time" datetime="2023-01-24">24.01.2023</time>
+
+              <span class="card-reviews__hashtag">
+                #обзор
+              </span>
+
+              <h3 class="card-reviews__text">
+                Велосипед Wilier Grantismo SLR для шоссейных гонок
+              </h3>
+
+              <a href="#" class="card-reviews__more more-link hover-link">
+                Подробнее
+              </a>
+
+            </div>
+
+          </article>
+        </div>
+
+        <div class="swiper-slide swiper-slide-latest-reviews">
+          <article class="card-reviews"
+            style="background-image: url('img/latest-reviews/latest-reviews-bg-4.webp');">
+
+            <div class="card-reviews__info">
+
+              <time class="card-reviews__time" datetime="2023-01-24">24.01.2023</time>
+
+              <span class="card-reviews__hashtag">
+                #обзор
+              </span>
+
+              <h3 class="card-reviews__text">
+                Велосипед Wilier Grantismo SLR для шоссейных гонок
+              </h3>
+
+              <a href="#" class="card-reviews__more more-link hover-link">
+                Подробнее
+              </a>
+
+            </div>
+
+          </article>
+        </div>
+
+      </div>
+
+    </div>
+
+        <div class="site-container">
+            <a href="#" class="latest-reviews__view-link view-link">
+                Показать все
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+      <section class="contacts">
+
+  <div class="site-container">
+    <h2 class="contacts__subtitle">
+      Контакты
+    </h2>
+  </div>
+
+  <div class="contacts__map" style="background-image: url('img/contacts/map.webp');">
+    <img loading="lazy" src="img/svg-icon/map-mark.svg" class="contacts__image" width="112" height="138"
+      aria-hidden="true" alt="">
+  </div>
+
+  <div class="site-container">
+    <ul class="contacts-list list-reset">
+
+      <li class="contacts-item" style="background-image: url('img/svg-icon/smartphone-contacts.svg');">
+        <a href="tel:+74950557586" class="contacts-phone hover-link">+7 495 055-75-86</a>
+        <a href="tel:+79651422299" class="contacts-phone hover-link">+7 965 142-22-99</a>
+      </li>
+
+      <li class="contacts-item" style="background-image: url('img/svg-icon/navigation-contacts.svg');">
+        <address class="contacts-address">г. Москва, ул. <br> Доватора, 7/8 с1</address>
+      </li>
+
+      <li class="contacts-item" style="background-image: url('img/svg-icon/mail-contacts.svg');">
+        <a href="mailto:order@world-bike.ru" class="contacts-mail hover-link">order@world-bike.ru</a>
+      </li>
+
+      <li class="contacts-item" style="background-image: url('img/svg-icon/calendar-contacts.svg');">
+        <span class="contacts-works">Без выходных</span>
+        <time class="contacts-time">10:00-20:00</time>
+      </li>
+
+    </ul>
+  </div>
+
+</section>
+
     </main>
 
-		@include('partials/footer.html')
+        <footer class="footer">
 
-	</div>
+    <div class="footer__top">
+
+        <div class="container-fluid" style="background-image: url('img/footer/pic.png');">
+
+            <div class="site-container">
+
+                <h2 class="footer__top-subtitle">
+                    Подпишитесь на наши новости
+                </h2>
+
+                <div class="form">
+
+                    <label class="form__label">
+                        <input type="text" name="Имя" class="input-reset form__input" placeholder="E-mail">
+                    </label>
+
+                    <button class="btn-reset form__btn btn" data-graph-path="subscription">Подписаться</button>
+
+                    <div class="graph-modal graph-modal--subscription">
+                        <div class="graph-modal__container graph-modal__container--subscription" role="dialog"
+							aria-modal="true" data-graph-target="subscription">
+                            <button class="btn-reset js-modal-close graph-modal__close"
+								aria-label="Закрыть модальное окно"
+								style="background-image: url('img/svg-icon/modal-close.svg');"></button>
+                            <div class="graph-modal__content graph-modal__content--subscription">
+                                <img loading="lazy" src="img/svg-icon/icon-subs.svg" class="subscription-image"
+									width="98" height="98" aria-hidden="true" alt="">
+                                <h2 class="subscription-subtitle">Благодарим за подписку!</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <label class="custom-checkbox custom-checkbox--policy">
+                    <input type="checkbox"
+						class="custom-checkbox__field custom-checkbox__field--policy visually-hidden">
+                    <span class="custom-checkbox__content">
+                        Согласен (на) на обработку персональных данных
+                    </span>
+                </label>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="site-container">
+
+        <div class="footer__inner">
+
+            <div class="footer__column">
+                <div class="logo footer__logo">
+                    <img loading="lazy" src="img/svg-icon/logo.svg" class="image" width="87" height="49"
+						alt="Логотип компаний world-bike">
+                </div>
+                <p class="footer__logo-description">
+                    Компания World-bikes <br> специализируется на продаже <br> товаров для велосипедного спорта.
+                </p>
+            </div>
+
+            <div class="footer__column footer__column--catalog">
+                <h3 class="footer__head">
+                    Каталог
+                </h3>
+                <nav class="nav" title="Основное меню сайта">
+                    <ul class="nav__list list-reset">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                Trade-in
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                Велосипеды
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                Экипировка
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                Запчасти
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                Велостанки
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                Аксессуары
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer__column footer__column--clients">
+                <h3 class="footer__head">
+                    Для клиента
+                </h3>
+                <nav class="nav" title="Дополнительное меню сайта">
+                    <ul class="nav__list list-reset">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                Доставка и оплата
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                Блог
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                Контакты
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                Веломастерская
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                Хранение
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                Гарантии
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer__column footer-contacts">
+                <h3 class="footer__head">
+                    Контакты
+                </h3>
+                <ul class="contacts-list list-reset">
+
+                    <li class="contacts-item" style="background-image: url('img/svg-icon/smartphone-footer.svg');">
+                        <a href="tel:+74950557586" class="contacts-phone hover-link">+7 495 055-75-86</a>
+                        <a href="tel:+79651422299" class="contacts-phone hover-link">+7 965 142-22-99</a>
+                    </li>
+
+                    <li class="contacts-item" style="background-image: url('img/svg-icon/navigation-footer.svg');">
+                        <address class="contacts-address">г. Москва, ул. <br> Доватора, 7/8 с1</address>
+                    </li>
+
+                    <li class="contacts-item" style="background-image: url('img/svg-icon/mail-footer.svg');">
+                        <a href="mailto:order@world-bike.ru" class="contacts-mail hover-link">order@world-bike.ru</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer__bottom">
+
+            <span class="footer__copyright">
+                © 2023 world bike
+            </span>
+
+            <a href="#" class="policy footer__policy hover-link">
+                Пользовательское соглашение
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+    </div>
 
 </body>
 
