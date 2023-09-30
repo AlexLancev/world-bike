@@ -461,12 +461,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var graph_tabs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! graph-tabs */ "./node_modules/graph-tabs/src/graph-tabs.js");
 
 const tabsMenu = new graph_tabs__WEBPACK_IMPORTED_MODULE_0__["default"]('tabs-menu');
-const filterTabs = new graph_tabs__WEBPACK_IMPORTED_MODULE_0__["default"]('tabs-filter');
-const tabs = new graph_tabs__WEBPACK_IMPORTED_MODULE_0__["default"]('tabs');
-const additionalTabs = new graph_tabs__WEBPACK_IMPORTED_MODULE_0__["default"]('additional-services-tabs');
-const informationDeliveryTabs = new graph_tabs__WEBPACK_IMPORTED_MODULE_0__["default"]('information-delivery-tabs');
-const informationDeliveryPayment = new graph_tabs__WEBPACK_IMPORTED_MODULE_0__["default"]('information-delivery-payment');
-const personalAreaTabs = new graph_tabs__WEBPACK_IMPORTED_MODULE_0__["default"]('personal-area-tabs');
+// const filterTabs = new GraphTabs('tabs-filter');
+// const tabs = new GraphTabs('tabs');
+// const additionalTabs = new GraphTabs('additional-services-tabs');
+// const informationDeliveryTabs = new GraphTabs('information-delivery-tabs');
+// const informationDeliveryPayment = new GraphTabs('information-delivery-payment');
+// const personalAreaTabs = new GraphTabs('personal-area-tabs');
 
 /***/ }),
 
