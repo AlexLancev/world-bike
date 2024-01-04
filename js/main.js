@@ -10,7 +10,14 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_tabs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/tabs */ "./src/js/components/tabs.js");
+/* harmony import */ var _components_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/modal */ "./src/js/components/modal.js");
+/* harmony import */ var _components_modal__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_modal__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_filter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/filter */ "./src/js/components/filter.js");
+/* harmony import */ var _components_filter__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_filter__WEBPACK_IMPORTED_MODULE_2__);
 console.log('components');
+
+
+// import './components/range-slider';
 
 
 /***/ }),
@@ -250,6 +257,10 @@ const similarProductsSwiper = new swiper__WEBPACK_IMPORTED_MODULE_3__["default"]
       slidesPerView: 1,
       spaceBetween: 40
     },
+    620: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
     1024: {
       slidesPerView: 3,
       spaceBetween: 40
@@ -271,35 +282,26 @@ const aboutStore = new swiper__WEBPACK_IMPORTED_MODULE_3__["default"]('.swiper--
   autoplay: {
     delay: 5000,
     disableOnInteraction: false
+  },
+  breakpoints: {
+    360: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    576: {
+      slidesPerView: 1.5,
+      spaceBetween: 20
+    },
+    769: {
+      slidesPerView: 'auto',
+      spaceBetween: 20
+    }
   }
-  // breakpoints: {
-  //   320: {
-  //     slidesPerView: 1,
-  //     spaceBetween: 20,
-  //   },
-  //   768: {
-  //     slidesPerView: 1.5,
-  //     spaceBetween: 20,
-  //   },
-  //   1024: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 30,
-  //   },
-  //   1200: {
-  //     slidesPerView: 2.5,
-  //     spaceBetween: 30,
-  //   },
-  //   1440: {
-  //     slidesPerView: 2.5,
-  //     spaceBetween: 40,
-  //   }
-  // },
 });
-
 const sliderMountain = document.querySelector('.mountain-bikes .slider-container');
 let mySwiper;
 function mountainmobileSlider() {
-  if (window.innerWidth <= 1200 && sliderMountain.dataset.mobile == 'false') {
+  if (window.innerWidth <= 1200) {
     mySwiper = new swiper__WEBPACK_IMPORTED_MODULE_3__["default"](sliderMountain, {
       slidesPerView: 1,
       spaceBetween: 10,
@@ -331,8 +333,10 @@ function mountainmobileSlider() {
         }
       }
     });
-    sliderMountain.dataset.mobile == 'true';
+
+    // sliderMountain.dataset.mobile == 'true';
   }
+
   if (window.innerWidth > 1200 && sliderMountain) {
     sliderMountain.dataset.mobile == 'false';
     if (sliderMountain.classList.contains('swiper-container-initialized')) {
@@ -383,6 +387,44 @@ function mobileSlider() {
 mobileSlider();
 window.addEventListener('resize', () => {
   mobileSlider();
+});
+const liderConteiner = document.querySelector('.lider-container');
+function liderConteinerFunc() {
+  let mySwiper;
+  if (window.innerWidth <= 1440) {
+    mySwiper = new swiper__WEBPACK_IMPORTED_MODULE_3__["default"](liderConteiner, {
+      slidesPerView: 'auto',
+      spaceBetween: 10,
+      slideClass: 'cards',
+      breakpoints: {
+        425: {
+          slidesPerView: 1,
+          spaceBetween: 15
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 15
+        },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 0
+        }
+      }
+    });
+
+    // liderConteiner.dataset.mobile == 'true';
+  }
+
+  if (window.innerWidth > 768 && liderConteiner) {
+    liderConteiner.dataset.mobile == 'false';
+    if (liderConteiner.classList.contains('swiper-container-initialized')) {
+      mySwiper.destroy();
+    }
+  }
+}
+liderConteinerFunc();
+window.addEventListener('resize', () => {
+  liderConteinerFunc();
 });
 
 // Подключение анимаций по скроллу
@@ -450,6 +492,245 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/js/components/filter.js":
+/*!*************************************!*\
+  !*** ./src/js/components/filter.js ***!
+  \*************************************/
+/***/ (() => {
+
+// const dataFilter = document.querySelectorAll('[data-filter]');
+// const dataId = document.querySelectorAll('[data-id]');
+
+// function getProducts() {
+
+//   dataFilter.forEach((itemBtn) => {
+//     itemBtn.addEventListener('click', function(e) {
+
+//       const currentBtn = e.target.dataset.filter;
+
+//       switch (currentBtn) {
+
+//         case 'all':
+//           viewProducts(currentBtn);
+//           break;
+
+//         case 'gornie-velosipedi':
+//           viewProducts(currentBtn);
+//           break;
+
+//         case 'velosipedi-dlya-triatlona':
+//           viewProducts(currentBtn);
+//           break;
+
+//         case 'gravijnye-velosipedy':
+//           viewProducts(currentBtn);
+//           break;
+
+//         case 'dvuhpodvesnye-velosipedy':
+//           viewProducts(currentBtn);
+//           break;
+
+//         case 'gorodskie-velosipedy':
+//           viewProducts(currentBtn);
+//           break;
+
+//         default:
+//           break;
+//       }
+
+//     })
+//   })
+// }
+// getProducts();
+
+// function viewProducts(className) {
+
+//   dataId.forEach((item) => {
+
+//     if (item.dataset.id === className) {
+
+//       item.classList.remove('hidden');
+//     } else {
+
+//       item.classList.add('hidden');
+//     }
+//   })
+// }
+
+// 1 Найти все кнопки по которым будем кликать
+// 2 Найти все карточки товаров
+// 3 Из каждого раздела можно выбрать только 1 категорию
+// 4 Изначально показаны все товары
+// 5 Показывается только выбранная категория
+// 6 Все остальные категории которые не выбраны скрываем
+// 7
+
+const dataId = document.querySelectorAll('[data-id]');
+const dataBtnId = document.querySelectorAll('[data-filter-id]');
+dataBtnId.forEach(item => {
+  item.addEventListener('click', e => {
+    const parendAttr = item.closest('.filter__type').dataset.type;
+    const arrBtnClass = [...e.target.classList];
+    const currentBtnClass = arrBtnClass[arrBtnClass.length - 1];
+    dataId.forEach(item => {
+      item.classList.add('hidden');
+      if (item.classList.contains(currentBtnClass)) {
+        item.setAttribute('data-name', currentBtnClass);
+        item.classList.remove('hidden');
+        if (item.hasAttribute('data-name')) {
+          console.log('+');
+        }
+        //   const allAttr = item.attributes;
+        //  [...allAttr].forEach((item) => {
+        //   if (item.classList.contains(currentBtnClass)) {
+        //     console.log('+');
+        //   }
+        //  })
+      }
+    });
+  });
+});
+
+// const dataFilter = document.querySelectorAll('[data-filter-id]');
+// const dataId = document.querySelectorAll('[data-id]');
+
+// const productsBikes = [
+//   'gornie-velosipedi',
+//   'velosipedi-dlya-triatlona',
+//   'gravijnye-velosipedy',
+//   'dvuhpodvesnye-velosipedy',
+//   'gorodskie-velosipedy',
+//   'bianci',
+//   'bmc',
+//   'ciclistino',
+//   'cipollini',
+//   'colnago',
+//   'early-rider',
+//   'giant',
+//   'trek',
+//   'alyuminij',
+//   'karbon',
+//   'stal'
+// ]
+
+/***/ }),
+
+/***/ "./src/js/components/modal.js":
+/*!************************************!*\
+  !*** ./src/js/components/modal.js ***!
+  \************************************/
+/***/ (() => {
+
+const modal = () => {
+  const popupLinks = document.querySelectorAll('.popup-link');
+  const body = document.querySelector('body');
+  const lockPadding = document.querySelectorAll('.lock-padding');
+  let unlock = true;
+  const timeout = 800;
+  if (popupLinks.length > 0) {
+    for (let index = 0; index < popupLinks.length; index++) {
+      const popupLink = popupLinks[index];
+      popupLink.addEventListener('click', function (e) {
+        const popupName = popupLink.getAttribute('data-href').replace('#', '');
+        const curentPopup = document.getElementById(popupName);
+        popupOpen(curentPopup);
+        e.preventDefault();
+      });
+    }
+  }
+  const popupCloseIcon = document.querySelectorAll('.close-popup');
+  if (popupCloseIcon.length > 0) {
+    for (let index = 0; index < popupCloseIcon.length; index++) {
+      const el = popupCloseIcon[index];
+      el.addEventListener('click', function (e) {
+        popupClose(el.closest('.popup'));
+        e.preventDefault();
+      });
+    }
+  }
+  function popupOpen(curentPopup) {
+    if (curentPopup && unlock) {
+      const popupActive = document.querySelector('.popup.open');
+      if (popupActive) {
+        popupClose(popupActive, false);
+      } else {
+        bodyLock();
+      }
+      curentPopup.classList.add('open');
+      curentPopup.addEventListener('click', function (e) {
+        if (!e.target.closest('.popup__content')) {
+          popupClose(e.target.closest('.popup'));
+        }
+      });
+    }
+  }
+  function popupClose(popupActive) {
+    let doUnlock = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+    if (unlock) {
+      popupActive.classList.remove('open');
+      if (doUnlock) {
+        bodyUnLock();
+      }
+    }
+  }
+  function bodyLock() {
+    const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
+    if (lockPadding.length > 0) {
+      for (let index = 0; index < lockPadding.length; index++) {
+        const el = lockPadding[index];
+        el.style.paddingRight = lockPaddingValue;
+      }
+    }
+    body.style.paddingRight = lockPaddingValue;
+    body.classList.add('lock');
+    unlock = false;
+    setTimeout(function () {
+      unlock = true;
+    }, timeout);
+  }
+  function bodyUnLock() {
+    setTimeout(function () {
+      if (lockPadding.lenght > 0) {
+        for (let index = 0; index < lockPadding.length; index++) {
+          const el = lockPadding[index];
+          el.style.paddingRight = '1px';
+        }
+      }
+      body.style.paddingRight = '1px';
+      body.classList.remove('lock');
+    }, timeout);
+    unlock = false;
+    setTimeout(function () {
+      unlock = true;
+    }, timeout);
+  }
+  document.addEventListener('keydown', function (e) {
+    if (e.which === 27) {
+      const popupActive = document.querySelector('.popup.open');
+      popupClose(popupActive);
+    }
+  });
+  (function () {
+    if (!Element.prototype.closest) {
+      Element.prototype.closest = function (css) {
+        var node = this;
+        while (node) {
+          if (node.matches(css)) return node;else node = node.parentElement;
+        }
+        return null;
+      };
+    }
+  })();
+  (function () {
+    if (!Element.prototype.matches) {
+      Element.prototype.matches = Element.prototype.matchesSelector || Element.prototype.webkitMatchesSelector || Element.prototype.mozMathesSelector || Element.prototype.msMatchesSelector;
+    }
+  })();
+};
+modal();
+
+/***/ }),
+
 /***/ "./src/js/components/tabs.js":
 /*!***********************************!*\
   !*** ./src/js/components/tabs.js ***!
@@ -461,12 +742,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var graph_tabs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! graph-tabs */ "./node_modules/graph-tabs/src/graph-tabs.js");
 
 const tabsMenu = new graph_tabs__WEBPACK_IMPORTED_MODULE_0__["default"]('tabs-menu');
-// const filterTabs = new GraphTabs('tabs-filter');
-// const tabs = new GraphTabs('tabs');
-// const additionalTabs = new GraphTabs('additional-services-tabs');
-// const informationDeliveryTabs = new GraphTabs('information-delivery-tabs');
-// const informationDeliveryPayment = new GraphTabs('information-delivery-payment');
-// const personalAreaTabs = new GraphTabs('personal-area-tabs');
+const filterTabs = new graph_tabs__WEBPACK_IMPORTED_MODULE_0__["default"]('tabs-filter');
+const tabs = new graph_tabs__WEBPACK_IMPORTED_MODULE_0__["default"]('tabs');
+const additionalTabs = new graph_tabs__WEBPACK_IMPORTED_MODULE_0__["default"]('additional-services-tabs');
+const informationDeliveryTabs = new graph_tabs__WEBPACK_IMPORTED_MODULE_0__["default"]('information-delivery-tabs');
+const informationDeliveryPayment = new graph_tabs__WEBPACK_IMPORTED_MODULE_0__["default"]('information-delivery-payment');
+const personalAreaTabs = new graph_tabs__WEBPACK_IMPORTED_MODULE_0__["default"]('personal-area-tabs');
+// const personalAreaHistory = new GraphTabs('personal-area-history');
 
 /***/ }),
 

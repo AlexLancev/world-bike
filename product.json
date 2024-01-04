@@ -1,0 +1,332 @@
+[
+  {
+    "country": "/img/triathlon/Switzerland.svg",
+    "status": "В наличии",
+    "image": "/img/triathlon/1",
+    "title": "BMC Speedmachine 01 LTD CARBON BLACK / NEON RED 2024",
+    "price": "2 182 671 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "velosipedi-dlya-triatlona"
+  },
+  {
+    "country": "",
+    "status": "В наличии",
+    "image": "/img/triathlon/2",
+    "title": "LIV AVOW ADVANCED 2021",
+    "price": "224 990 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "velosipedi-dlya-triatlona"
+  },
+  {
+    "country": "",
+    "status": "В наличии",
+    "image": "/img/triathlon/3",
+    "title": "BMC Timemachine 01 DISC ONE Force AXS Turquoise black carbon 2022",
+    "price": "726 640 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "velosipedi-dlya-triatlona"
+  },
+  {
+    "country": "/img/triathlon/Switzerland.svg",
+    "status": "В наличии",
+    "image": "/img/triathlon/4",
+    "title": "BMC TIMEMACHINE 01 DISC ONE DURA ACE DI2 DISC 12V GREEN/BLACK/CARBON 2022",
+    "price": "882 000 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "velosipedi-dlya-triatlona"
+  },
+  {
+    "country": "",
+    "status": "Нет в наличии",
+    "image": "/img/triathlon/5",
+    "title": "BMC Timemachine 01 DISC TWO Rival AXS White Black Carbon 2022",
+    "price": "628 720 &#8381;",
+    "track": "Отслеживать",
+    "statusClass": "card__status--sold-out",
+    "bike": "velosipedi-dlya-triatlona"
+  },
+  {
+    "country": "/img/triathlon/Switzerland.svg",
+    "status": "В наличии",
+    "image": "/img/triathlon/6",
+    "title": "BMC TIMEMACHINE 01 DISC TWO ULTEGRA DI2 12V GREEN/BLACK/CARBON 2022",
+    "price": "785 400 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "velosipedi-dlya-triatlona"
+  },
+  {
+    "country": "/img/triathlon/Switzerland.svg",
+    "status": "В наличии",
+    "image": "/img/triathlon/7",
+    "title": "BMC Timemachine ONE 105 Red Black Carbon 2023",
+    "price": "304 920 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "velosipedi-dlya-triatlona"
+  },
+  {
+    "country": "/img/novelties/novelties-itali.webp",
+    "status": "В наличии",
+    "image": "/img/triathlon/8",
+    "title": "WILIER TURBINE CRONO DURA ACE DI2 DISC 12 V COSMIC SLR 65 желтый/черный 2023",
+    "price": "913 500 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "velosipedi-dlya-triatlona"
+  },
+  {
+    "country": "",
+    "status": "В наличии",
+    "image": "/img/triathlon/9",
+    "title": "Orbea ORDU M10I LTD Голубой/антрацит 2022",
+    "price": "1 241 500 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "velosipedi-dlya-triatlona"
+  },
+  {
+    "country": "/img/novelties/novelties-itali.webp",
+    "status": "В наличии",
+    "image": "/img/triathlon/10",
+    "title": "WILIER TURBINE CRONO ULTEGRA DI2 DISC 12 V COSMIC SL45 желтый/черный 2023",
+    "price": "769 500 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "velosipedi-dlya-triatlona"
+  },
+  {
+    "country": "/img/triathlon/Switzerland.svg",
+    "status": "В наличии",
+    "image": "/img/triathlon/11",
+    "title": "BMC Timemachine 01 DISC TWO 2023",
+    "price": "670 000 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "velosipedi-dlya-triatlona"
+  },
+  {
+    "country": "",
+    "status": "Нет в наличии",
+    "image": "/img/triathlon/12",
+    "title": "Orbea Ordu M20i LTD Серый Красный 2021",
+    "price": "882 000 &#8381;",
+    "track": "Отслеживать",
+    "statusClass": "card__status--sold-out",
+    "bike": "velosipedi-dlya-triatlona"
+  },
+  {
+    "country": "/img/triathlon/Switzerland.svg",
+    "status": "В наличии",
+    "image": "/img/triathlon/13",
+    "title": "Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021",
+    "price": "684 840 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "velosipedi-dlya-triatlona"
+  },
+  {
+    "country": "/img/novelties/novelties-usa.webp",
+    "status": "В наличии",
+    "image": "/img/triathlon/14",
+    "title": "ORBEA ORDU M30iLTD 2023",
+    "price": "1 182 400 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "velosipedi-dlya-triatlona"
+  },
+  {
+    "country": "/img/triathlon/spain.svg",
+    "status": "В наличии",
+    "image": "/img/triathlon/15",
+    "title": "ORBEA ORDU M20iLTD 2023",
+    "price": "342 000 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "velosipedi-dlya-triatlona"
+  },
+  {
+    "country": "/img/triathlon/Switzerland.svg",
+    "status": "В наличии",
+    "image": "/img/triathlon/16",
+    "title": "ORBEA ORDU M10iLTD 2023",
+    "price": "562 000 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "velosipedi-dlya-triatlona"
+  },
+  {
+    "country": "/img/triathlon/Switzerland.svg",
+    "status": "В наличии",
+    "image": "/img/triathlon/17",
+    "title": "BMC Timemachine 01 DISC TWO 2023",
+    "price": "812 000 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "velosipedi-dlya-triatlona"
+  },
+  {
+    "country": "/img/triathlon/Switzerland.svg",
+    "status": "В наличии",
+    "image": "/img/triathlon/18",
+    "title": "Orbea ORDU M10I LTD Голубой/антрацит 2022",
+    "price": "1 241 500 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "velosipedi-dlya-triatlona"
+  },
+  {
+    "country": "/img/triathlon/Switzerland.svg",
+    "status": "В наличии",
+    "image": "/img/triathlon/19",
+    "title": "BMC Timemachine ONE 105 Red Black Carbon 2023",
+    "price": "304 920 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "velosipedi-dlya-triatlona"
+  },
+  {
+    "country": "/img/triathlon/Switzerland.svg",
+    "status": "В наличии",
+    "image": "/img/triathlon/20",
+    "title": "BMC Timemachine 01 DISC TWO Rival AXS White Black Carbon 2022",
+    "price": "628 720 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "velosipedi-dlya-triatlona"
+  },
+  {
+    "country": "/img/triathlon/Switzerland.svg",
+    "status": "В наличии",
+    "image": "/img/triathlon/21",
+    "title": "BMC Timemachine 01 DISC ONE Force AXS Turquoise black carbon 2022",
+    "price": "726 640 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "velosipedi-dlya-triatlona"
+  },
+  {
+    "country": "",
+    "status": "В наличии",
+    "image": "/img/mountain-bike/1",
+    "title": "Bianchi Nitron 9.4 XT DEO 1X12 / Целесте 2023",
+    "price": "265 500 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "gornie-velosipedi"
+  },
+  {
+    "country": "",
+    "status": "В наличии",
+    "image": "/img/mountain-bike/2",
+    "title": "Bianchi Nitron 9.4 XT DEO 1X12 / Белый 2023",
+    "price": "265 500 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "gornie-velosipedi"
+  },
+  {
+    "country": "",
+    "status": "В наличии",
+    "image": "/img/mountain-bike/3",
+    "title": "Bianchi Nitron 9.2 XT/SLX 1X12 / Целесте 2023",
+    "price": "373 890 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "gornie-velosipedi"
+  },
+  {
+    "country": "/img/triathlon/Switzerland.svg",
+    "status": "В наличии",
+    "image": "/img/mountain-bike/4",
+    "title": "Bianchi Nitron 9.4 XT DEO 1X12 / Целесте 2023",
+    "price": "265 500 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "gornie-velosipedi"
+  },
+  {
+    "country": "/img/triathlon/spain.svg",
+    "status": "В наличии",
+    "image": "/img/mountain-bike/5",
+    "title": "ORBEA ONNA 29 10 терракотовый 2023",
+    "price": "109 440 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "gornie-velosipedi"
+  },
+  {
+    "country": "/img/triathlon/spain.svg",
+    "status": "В наличии",
+    "image": "/img/mountain-bike/6",
+    "title": "ORBEA OCCAM M30-EAGLE фиолетовый 2023",
+    "price": "488 988 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "gornie-velosipedi"
+  },
+  {
+    "country": "/img/triathlon/spain.svg",
+    "status": "В наличии",
+    "image": "/img/mountain-bike/7",
+    "title": "ORBEA ALMA M21 кремовый 2023",
+    "price": "315 500 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "gornie-velosipedi"
+  },
+  {
+    "country": "/img/triathlon/spain.svg",
+    "status": "В наличии",
+    "image": "/img/mountain-bike/8",
+    "title": "ORBEA OCCAM M30 темно-зеленый 2023",
+    "price": "205 500 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "gornie-velosipedi"
+  },
+  {
+    "country": "/img/triathlon/spain.svg",
+    "status": "В наличии",
+    "image": "/img/mountain-bike/9",
+    "title": "ORBEA OIZ M11 AXS черный 2023",
+    "price": "549 900 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "gornie-velosipedi"
+  },
+  {
+    "country": "/img/triathlon/spain.svg",
+    "status": "В наличии",
+    "image": "/img/mountain-bike/10",
+    "title": "ORBEA ALMA M21-AXS зеленый 2023",
+    "price": "165 500 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "gornie-velosipedi"
+  },
+  {
+    "country": "/img/triathlon/spain.svg",
+    "status": "В наличии",
+    "image": "/img/mountain-bike/11",
+    "title": "ORBEA ALMA M11-AXS зеленый 2023",
+    "price": "167 500 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "gornie-velosipedi"
+  },
+  {
+    "country": "/img/triathlon/spain.svg",
+    "status": "В наличии",
+    "image": "/img/mountain-bike/12",
+    "title": "Orbea OIZ M20 TR коралловый/черный 2023",
+    "price": "195 500 &#8381;",
+    "track": "Купить в 1 клик",
+    "statusClass": "card__status--stock",
+    "bike": "gornie-velosipedi"
+  }
+]

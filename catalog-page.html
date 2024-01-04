@@ -21,8 +21,11 @@
     <link rel="preload" href="fonts/montserrat/MontserratSemiBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/montserrat/MontserratBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/openSans/OpenSansRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- <link rel="stylesheet" href="css/nouislider.min.css"> -->
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
+  <title>Купить велосипеды</title>
+  <script defer src="js/nouislider.min.js"></script>
   <script defer src="js/main.js"></script>
 </head>
 
@@ -36,10 +39,10 @@
 
         <div class="header__inner">
 
-            <a href="index.html" class="logo header__logo">
+            <div href="index.html" class="logo header__logo">
                 <img loading="lazy" src="img/svg-icon/logo.svg" class="image" width="87" height="49"
 					alt="Логотип компаний world-bike">
-            </a>
+            </div>
 
             <div class="header__box">
 
@@ -66,27 +69,27 @@
                     </ul>
                 </nav>
 
-                <div class="hero__user-row user-icon">
+                <div class="header__user-row user-icon">
 
-                    <button type="button" data-href="#" class="user-icon__link popup-link">
+                    <button type="button" class="user-icon__link popup-link" aria-label="Поиск по сайту">
                         <svg class="svg-header-user svg-search">
                             <use xlink:href="img/sprite.svg#search"></use>
                         </svg>
                     </button>
 
-                    <button type="button" data-href="#" class="user-icon__link popup-link">
+                    <button type="button" class="user-icon__link popup-link" aria-label="Личный кабинет перейти">
                         <svg class="svg-header-user svg-user1">
                             <use xlink:href="img/sprite.svg#user1"></use>
                         </svg>
                     </button>
 
-                    <button type="button" data-href="#" class="user-icon__link popup-link">
+                    <button type="button" class="user-icon__link popup-link" aria-label="Товары добавленные в избранное">
                         <svg class="svg-header-user svg-favorites">
                             <use xlink:href="img/sprite.svg#favorites"></use>
                         </svg>
                     </button>
 
-                    <button type="button" data-href="#" class="user-icon__link popup-link">
+                    <button type="button" class="user-icon__link popup-link" aria-label="Корзина товаров">
                         <svg class="svg-header-user svg-basket">
                             <use xlink:href="img/sprite.svg#basket"></use>
                         </svg>
@@ -108,12 +111,12 @@
                             <ul class="tabs__nav list-reset">
 
                                 <li class="tabs__nav-item">
-                                    <a href="#" class="tabs__nav-link">TRADE IN</a>
+                                    <a href="#" class="tabs__nav-link tabs__nav-link--menu">TRADE IN</a>
                                 </li>
 
                                 <li class="tabs__nav-item">
 
-                                    <button class="tabs__nav-btn tabs__nav-btn--menu" type="button">Велосипеды</button>
+                                    <button class="btn-reset tabs__nav-btn tabs__nav-btn--menu" type="button">Велосипеды</button>
 
                                     <div class="tabs__panel tabs__panel--menu">
                                         <nav class="nav">
@@ -156,7 +159,7 @@
 
                                 <li class="tabs__nav-item">
 
-                                    <button class="tabs__nav-btn tabs__nav-btn--menu" type="button">Запчасти</button>
+                                    <button class="btn-reset tabs__nav-btn tabs__nav-btn--menu" type="button">Запчасти</button>
 
                                     <div class="tabs__panel tabs__panel--menu">
                                         <nav class="nav">
@@ -217,7 +220,7 @@
 
                                 <li class="tabs__nav-item">
 
-                                    <button class="tabs__nav-btn tabs__nav-btn--menu" type="button">Экипировка</button>
+                                    <button class="btn-reset tabs__nav-btn tabs__nav-btn--menu" type="button">Экипировка</button>
 
                                     <div class="tabs__panel tabs__panel--menu">
                                         <nav class="nav">
@@ -254,7 +257,7 @@
 
                                 <li class="tabs__nav-item">
 
-                                    <button class="tabs__nav-btn tabs__nav-btn--menu" type="button">Аксессуары</button>
+                                    <button class="btn-reset tabs__nav-btn tabs__nav-btn--menu" type="button">Аксессуары</button>
 
                                     <div class="tabs__panel tabs__panel--menu">
                                         <nav class="nav">
@@ -285,7 +288,7 @@
 
                                 <li class="tabs__nav-item">
 
-                                    <button class="tabs__nav-btn tabs__nav-btn--menu" type="button">Велостанки</button>
+                                    <button class="btn-reset tabs__nav-btn tabs__nav-btn--menu" type="button">Велостанки</button>
 
                                     <div class="tabs__panel tabs__panel--menu">
                                         <nav class="nav">
@@ -348,413 +351,454 @@
 
 </header>
 
-<section class="pagination-site" style="background-image: url('img/pagination-site/pagination-site-bg.jpg');">
+        <main class="main">
 
-    <div class="site-container">
+        <section class="pagination-site" style="background-image: url('img/pagination-site/pagination-site-bg.webp');">
 
-        <nav class="pagination-site__nav" title="Навигация по сайту">
+  <div class="site-container">
 
-            <ul class="pagination-site__list list-reset">
+    <nav class="pagination-site__nav" title="Навигация по сайту">
 
-                <li class="pagination-site__item">
-                    <a href="#" class="pagination-site__link">
-                        Главная
-                    </a>
-                </li>
+      <ul class="pagination-site__list list-reset">
 
-                <li class="pagination-site__item">
-                    <a class="pagination-site__link pagination-site__link--current-page" disabled>
-                        Велосипеды
-                    </a>
-                </li>
+        <li class="pagination-site__item">
+          <a href="#" class="pagination-site__link">
+            Главная
+          </a>
+        </li>
 
-            </ul>
-
-        </nav>
-
-        <h1 class="pagination-site__title">
+        <li class="pagination-site__item">
+          <a class="pagination-site__link pagination-site__link--current-page" disabled>
             Велосипеды
-        </h1>
+          </a>
+        </li>
 
-    </div>
+      </ul>
+
+    </nav>
+
+    <h1 class="pagination-site__title">
+      Велосипеды
+    </h1>
+
+  </div>
 
 </section>
 
-        <main class="main">
-
-        <section class="catalog-page">
+<section class="catalog-page">
 
   <div class="site-container">
 
     <div class="catalog-page__inner">
 
-      <aside class="filter tabs" data-tabs="filter-tabs">
+      <div id="filter-modal" class="popup popup--filter" role="alert">
+        <div class="popup__body">
+          <div class="popup__content">
+            <button type="button" class="popup__close close-popup" aria-label="закрыть модальное окно"></button>
 
-        <ul class="tabs__nav list-reset">
+            <aside class="filter tabs filter-tabs" data-tabs="tabs-filter">
 
-          <li class="filter__type">
+              <ul class="tabs__nav list-reset">
 
-            <label class="custom-checkbox custom-checkbox--only-stock">
-              <input type="checkbox" class="custom-checkbox__field visually-hidden">
-              <span class="custom-checkbox__content">
-                Только в наличии
-              </span>
-            </label>
+                <li class="filter__type">
 
-          </li>
-
-          <li class="filter__type">
-
-            <div class="tabs__nav-item">
-
-              <button class="tabs__nav-btn tabs__nav-btn--arrow" type="button">
-                Категории товара
-              </button>
-
-              <div class="tabs__content">
-
-                <div class="tabs__panel">
-
-                  <label class="custom-checkbox">
+                  <label class="custom-checkbox custom-checkbox--only-stock">
                     <input type="checkbox" class="custom-checkbox__field visually-hidden">
                     <span class="custom-checkbox__content">
-                      Велосипеды для триатлона
+                      Только в наличии
                     </span>
                   </label>
 
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__content">
-                      Горные велосипеды
-                    </span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__content">
-                      Городские велосипеды
-                    </span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__content">
-                      Гравийные велосипеды
-                    </span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__content">
-                      Двухподвесные велосипеды
-                    </span>
-                  </label>
+                </li>
 
-                  <button class="filter__more view-link btn-reset">
-                    Показать ещё
-                  </button>
+                <li class="filter__type" data-type="bike">
 
-                </div>
+                  <div class="tabs__nav-item">
 
-              </div>
+                    <button class="btn-reset tabs__nav-btn tabs__nav-btn--filter tabs__nav-btn--arrow" type="button">
+                      Категории товара
+                    </button>
 
-            </div>
+                    <div class="tabs__content">
 
-          </li>
+                      <div class="tabs__panel tabs__panel--filter">
 
-          <li class="filter__type">
-
-            <div class="tabs__nav-item">
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden filter-btn all" data-filter-id checked>
+                          <span class="custom-checkbox__content">
+                            Все велосипеды
+                          </span>
+                        </label>
 
-              <button class="tabs__nav-btn tabs__nav-btn--arrow" type="button">
-                Цена
-              </button>
-
-              <div class="tabs__content">
-                <div class="tabs__panel"></div>
-              </div>
-
-            </div>
-
-          </li>
-
-          <li class="filter__type">
-
-            <div class="tabs__nav-item">
-
-              <button class="tabs__nav-btn tabs__nav-btn--arrow" type="button"
-                style="background-image: url('img/svg-icon/arrow-tabs.svg');">
-                Бренд
-              </button>
-
-              <div class="tabs__content">
-
-                <div class="tabs__panel">
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden filter-btn velosipedi-dlya-triatlona" data-filter-id>
+                          <span class="custom-checkbox__content">
+                            Велосипеды для триатлона
+                          </span>
+                        </label>
 
-                  <label class="custom-checkbox custom-checkbox--brand">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__content">
-                      Bianci
-                    </span>
-                    <small class="custom-checkbox__quantity">(24)</small>
-                  </label>
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden filter-btn gornie-velosipedi" data-filter-id>
+                          <span class="custom-checkbox__content">
+                            Горные велосипеды
+                          </span>
+                        </label>
 
-                  <label class="custom-checkbox custom-checkbox--brand">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__content">
-                      BMC
-                    </span>
-                    <small class="custom-checkbox__quantity">(118)</small>
-                  </label>
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden filter-btn gorodskie-velosipedy" data-filter-id>
+                          <span class="custom-checkbox__content">
+                            Городские велосипеды
+                          </span>
+                        </label>
 
-                  <label class="custom-checkbox custom-checkbox--brand">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__content">
-                      Ciclistino
-                    </span>
-                    <small class="custom-checkbox__quantity">(2)</small>
-                  </label>
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden filter-btn gravijnye-velosipedy" data-filter-id>
+                          <span class="custom-checkbox__content">
+                            Гравийные велосипеды
+                          </span>
+                        </label>
 
-                  <label class="custom-checkbox custom-checkbox--brand">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__content">
-                      Cipollini
-                    </span>
-                    <small class="custom-checkbox__quantity">(38)</small>
-                  </label>
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden filter-btn dvuhpodvesnye-velosipedy" data-filter-id>
+                          <span class="custom-checkbox__content">
+                            Двухподвесные велосипеды
+                          </span>
+                        </label>
 
-                  <label class="custom-checkbox custom-checkbox--brand">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__content">
-                      Colnago
-                    </span>
-                    <small class="custom-checkbox__quantity">(19)</small>
-                  </label>
+                        <button class="filter__more view-link btn-reset">
+                          Показать ещё
+                        </button>
 
-                  <button class="filter__more view-link btn-reset">
-                    Показать ещё
-                  </button>
+                      </div>
 
-                </div>
+                    </div>
 
-              </div>
+                  </div>
 
-            </div>
+                </li>
 
-          </li>
+                <!-- <li class="filter__type">
 
-          <li class="filter__type">
+                  <div class="tabs__nav-item">
 
-            <div class="tabs__nav-item">
+                    <button class="btn-reset tabs__nav-btn tabs__nav-btn--filter tabs__nav-btn--arrow" type="button">
+                      Цена
+                    </button>
 
-              <button class="tabs__nav-btn tabs__nav-btn--arrow" type="button"
-                style="background-image: url('img/svg-icon/arrow-tabs.svg');">
-                Материал рамы
-              </button>
+                    <div class="tabs__content">
 
-              <div class="tabs__content">
+                      <div class="tabs__panel filter-price tabs__panel--filter">
 
-                <div class="tabs__panel">
+                        <div class="filter-price__slider" id="range-slider" data-sort="price-filter"></div>
 
-                  <label class="custom-checkbox custom-checkbox--material">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__content">
-                      Алюминий
-                    </span>
-                    <small class="custom-checkbox__quantity">(55)</small>
-                  </label>
-
-                  <label class="custom-checkbox custom-checkbox--material">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__content">
-                      Карбон
-                    </span>
-                    <small class="custom-checkbox__quantity">(74)</small>
-                  </label>
-
-                  <label class="custom-checkbox custom-checkbox--material">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__content">
-                      Сталь
-                    </span>
-                    <small class="custom-checkbox__quantity">(2)</small>
-                  </label>
-
-                  <button class="filter__more view-link btn-reset">
-                    Показать ещё
-                  </button>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </li>
-
-          <li class="filter__type">
-
-            <div class="tabs__nav-item">
-
-              <button class="tabs__nav-btn tabs__nav-btn--arrow" type="button"
-                style="background-image: url('img/svg-icon/arrow-tabs.svg');">
-                Цвет
-              </button>
-
-              <div class="tabs__content">
-                <div class="tabs__panel tabs__panel--color">
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #F2F1EF;"></span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #38D5C8;"></span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #ACB690;"></span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #CC7E3B;"></span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #740222;"></span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #44ACFB;"></span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #FEF95F;"></span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #0D7F19;"></span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #FFD536;"></span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #FE7E56;"></span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #AC632C;"></span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #FD0012;"></span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #25FD3C;"></span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #353839;"></span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #FEA32A;"></span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #E5E4E2;"></span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #79526F;"></span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #FEC0CB;"></span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #BDBDBD;"></span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #7F7F7F;"></span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #0026F9;"></span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #49423D;"></span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #061E42;"></span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #8926F9;"></span>
-                  </label>
-
-                  <label class="custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox__field visually-hidden">
-                    <span class="custom-checkbox__color" style="background-color: #000000;"></span>
-                  </label>
-
-                </div>
-              </div>
-
-            </div>
-
-          </li>
-
-          <button type="reset" class="filter__btn-reset btn-reset">
-            Сбросить фильтры
-          </button>
-
-        </ul>
-
-      </aside>
+                        <div class="filter-price__row">
+                          <label  class="filter-price__label">
+                            <input class="filter-price__input" min="50 000" max="12 500 000" placeholder="50 000 &#8381;" type="number" id="input-0">
+                          </label>
+
+                          <label class="filter-price__label">
+                            <input class="filter-price__input" min="50 000" max="12 500 000" placeholder="12 500 000 &#8381;" type="number" id="input-1">
+                          </label>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </li> -->
+
+                <li class="filter__type" data-type="brand">
+
+                  <div class="tabs__nav-item">
+
+                    <button class="btn-reset tabs__nav-btn tabs__nav-btn--filter tabs__nav-btn--arrow" type="button">
+                      Бренд
+                    </button>
+
+                    <div class="tabs__content">
+
+                      <div class="tabs__panel tabs__panel--filter">
+
+                        <label class="custom-checkbox custom-checkbox--brand">
+                          <input type="radio" name="brand" class="custom-checkbox__field visually-hidden bianci" data-filter-id>
+                          <span class="custom-checkbox__content">
+                            Bianci
+                          </span>
+                          <small class="custom-checkbox__quantity">(24)</small>
+                        </label>
+
+                        <label class="custom-checkbox custom-checkbox--brand">
+                          <input type="radio" name="brand" class="custom-checkbox__field visually-hidden bmc" data-filter-id>
+                          <span class="custom-checkbox__content">
+                            BMC
+                          </span>
+                          <small class="custom-checkbox__quantity">(118)</small>
+                        </label>
+
+                        <label class="custom-checkbox custom-checkbox--brand">
+                          <input type="radio" name="brand" class="custom-checkbox__field visually-hidden ciclistino" data-filter-id>
+                          <span class="custom-checkbox__content">
+                            Ciclistino
+                          </span>
+                          <small class="custom-checkbox__quantity">(2)</small>
+                        </label>
+
+                        <label class="custom-checkbox custom-checkbox--brand">
+                          <input type="radio" name="brand" class="custom-checkbox__field visually-hidden cipollini" data-filter-id>
+                          <span class="custom-checkbox__content">
+                            Cipollini
+                          </span>
+                          <small class="custom-checkbox__quantity">(38)</small>
+                        </label>
+
+                        <label class="custom-checkbox custom-checkbox--brand">
+                          <input type="radio" name="brand" class="custom-checkbox__field visually-hidden colnago" data-filter-id>
+                          <span class="custom-checkbox__content">
+                            Colnago
+                          </span>
+                          <small class="custom-checkbox__quantity">(19)</small>
+                        </label>
+
+                        <button class="filter__more view-link btn-reset">
+                          Показать ещё
+                        </button>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </li>
+
+                <li class="filter__type" data-type="type">
+
+                  <div class="tabs__nav-item">
+
+                    <button class="btn-reset tabs__nav-btn tabs__nav-btn--filter tabs__nav-btn--arrow" type="button">
+                      Материал рамы
+                    </button>
+
+                    <div class="tabs__content">
+
+                      <div class="tabs__panel tabs__panel--filter">
+
+                        <label class="custom-checkbox custom-checkbox--material">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden" data-filter-id data-filter-type="alyuminij">
+                          <span class="custom-checkbox__content">
+                            Алюминий
+                          </span>
+                          <small class="custom-checkbox__quantity">(55)</small>
+                        </label>
+
+                        <label class="custom-checkbox custom-checkbox--material">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden" data-filter-id data-filter-type="carbon">
+                          <span class="custom-checkbox__content">
+                            Карбон
+                          </span>
+                          <small class="custom-checkbox__quantity">(74)</small>
+                        </label>
+
+                        <label class="custom-checkbox custom-checkbox--material">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden" data-filter-id data-filter-type="stal">
+                          <span class="custom-checkbox__content">
+                            Сталь
+                          </span>
+                          <small class="custom-checkbox__quantity">(2)</small>
+                        </label>
+
+                        <button class="filter__more view-link btn-reset">
+                          Показать ещё
+                        </button>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </li>
+
+                <li class="filter__type" data-type="color">
+
+                  <div class="tabs__nav-item">
+
+                    <button class="btn-reset tabs__nav-btn tabs__nav-btn--filter tabs__nav-btn--arrow" type="button">
+                      Цвет
+                    </button>
+
+                    <div class="tabs__content">
+                      <div class="tabs__panel tabs__panel--color tabs__panel--filter">
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #F2F1EF;"></span>
+                        </label>
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #38D5C8;"></span>
+                        </label>
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #ACB690;"></span>
+                        </label>
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #CC7E3B;"></span>
+                        </label>
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #740222;"></span>
+                        </label>
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #44ACFB;"></span>
+                        </label>
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #FEF95F;"></span>
+                        </label>
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #0D7F19;"></span>
+                        </label>
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #FFD536;"></span>
+                        </label>
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #FE7E56;"></span>
+                        </label>
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #AC632C;"></span>
+                        </label>
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #FD0012;"></span>
+                        </label>
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #25FD3C;"></span>
+                        </label>
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #353839;"></span>
+                        </label>
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #FEA32A;"></span>
+                        </label>
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #E5E4E2;"></span>
+                        </label>
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #79526F;"></span>
+                        </label>
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #FEC0CB;"></span>
+                        </label>
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #BDBDBD;"></span>
+                        </label>
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #7F7F7F;"></span>
+                        </label>
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #0026F9;"></span>
+                        </label>
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #49423D;"></span>
+                        </label>
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #061E42;"></span>
+                        </label>
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #8926F9;"></span>
+                        </label>
+
+                        <label class="custom-checkbox">
+                          <input type="radio" name="bike" class="custom-checkbox__field visually-hidden">
+                          <span class="custom-checkbox__color" style="background-color: #000000;"></span>
+                        </label>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </li>
+
+                <button type="reset" class="filter__btn-reset btn-reset">
+                  Сбросить фильтры
+                </button>
+
+              </ul>
+
+            </aside>
+
+          </div>
+        </div>
+      </div>
 
       <section class="catalog-page__models">
 
         <div class="withdrawal-goods">
 
-          <select class="withdrawal-goods__select" name="withdrawal-goods-sort">
-            <option class="withdrawal-goods__option" value="">Сортировка от последнего</option>
-            <option class="withdrawal-goods__option" value="">По популярности</option>
-            <option class="withdrawal-goods__option" value="">По рейтингу</option>
-            <option class="withdrawal-goods__option" value="">Цены: по возрастанию</option>
-            <option class="withdrawal-goods__option" value="">Цены: по убыванию</option>
-          </select>
+          <div class="filter-container">
+
+            <select class="withdrawal-goods__select" name="withdrawal-goods-sort">
+              <option class="withdrawal-goods__option" value="">Сортировка от последнего</option>
+              <option class="withdrawal-goods__option" value="">По популярности</option>
+              <option class="withdrawal-goods__option" value="">По рейтингу</option>
+              <option class="withdrawal-goods__option" value="">Цены: по возрастанию</option>
+              <option class="withdrawal-goods__option" value="">Цены: по убыванию</option>
+            </select>
+
+            <button class="btn-reset withdrawal-goods__btn popup-link" type="button" data-href="filter-modal">
+              <picture>
+                <source srcset="/img/novelties/filter-btn-bg.webp" type="image/webp">
+                <img loading="lazy" src="/img/novelties/filter-btn-bg.png" class="withdrawal-goods__image" width="32"
+                  height="32" aria-hidden="true" alt="">
+              </picture>
+            </button>
+
+          </div>
 
           <div class="cards-row">
 
@@ -769,9 +813,128 @@
 
         <div class="catalog-page__models-view catalog-page__models-view--bicycles-all">
 
-          <div class="wrapper-grid">
+          <div class="grid-filter">
 
-            <article class="card" style="background-image: url('img/novelties/novelties-itali.png');">
+            <!-- <article class="card product-filter" data-id data-model="gornie-velosipedi" data-brand="bianci" data-type="stal" style="background-image: url('img/novelties/novelties-itali.png');">
+
+              <div class="card__header">
+                <span class="card__status card__status--sold-out">
+                  Распродано
+                </span>
+              </div>
+
+              <picture class="card-model">
+                <source srcset="img\triathlon\1.webp" type="image/webp">
+                <img loading="lazy" src="img\triathlon\1.png" class="card-model__image" width="368"
+                  height="250" alt="Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021">
+              </picture>
+
+              <div class="card__moodel">
+                <h3 class="card__model-name">
+                  Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021
+                </h3>
+                <span class="card__model-prices price-filter">
+                  684 840 ₽
+                </span>
+              </div>
+
+              <button class="btn card__btn card__btn--track" type="button">
+                <svg class="cursor-click cursor-click--track">
+                  <use xlink:href="img/sprite.svg#cursor-click"></use>
+                </svg>
+
+                <span class="card__btn-text card__btn-text--track">
+                  Отслеживать
+                </span>
+              </button>
+
+            </article>
+
+            <article class="card product-filter" data-id data-model="velosipedi-dlya-triatlona" data-brand="bianci" data-type="alyuminij" style="background-image: url('img/novelties/novelties-itali.png');">
+
+              <div class="card__header">
+                <span class="card__status card__status--sold-out">
+                  Распродано
+                </span>
+              </div>
+
+              <picture class="card-model">
+                <source srcset="img/novelties/novelties-bg-2.webp" type="image/webp">
+                <img loading="lazy" src="img/novelties/novelties-bg-2.png" class="card-model__image" width="368"
+                  height="250" alt="Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021">
+              </picture>
+
+              <div class="card__moodel">
+                <h3 class="card__model-name">
+                  Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021
+                </h3>
+                <span class="card__model-prices price-filter">
+                  684 840 ₽
+                </span>
+              </div>
+
+              <button class="btn card__btn card__btn--track" type="button">
+                <svg class="cursor-click cursor-click--track">
+                  <use xlink:href="img/sprite.svg#cursor-click"></use>
+                </svg>
+
+                <span class="card__btn-text card__btn-text--track">
+                  Отслеживать
+                </span>
+              </button>
+
+            </article>
+
+            <article class="stock-card product-filter card" style="background-image: url('img/stock-card/stock-card-bg.png');">
+
+              <div class="stock-card__info">
+
+                <span class="stock-card__promotion">Акция</span>
+
+                <strong class="stock-card__strong">Скидка 20%</strong>
+
+                <span class="stock-card__what-discount">На всю экипировку</span>
+
+              </div>
+
+            </article>
+
+            <article class="card product-filter" data-id data-model="gravijnye-velosipedy" data-brand="bmc" data-type="alyuminij" style="background-image: url('img/novelties/novelties-itali.png');">
+
+              <div class="card__header">
+                <span class="card__status card__status--sold-out">
+                  Распродано
+                </span>
+              </div>
+
+              <picture class="card-model">
+                <source srcset="img/novelties/novelties-bg-3.webp" type="image/webp">
+                <img loading="lazy" src="img/novelties/novelties-bg-3.png" class="card-model__image" width="368"
+                  height="250" alt="Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021">
+              </picture>
+
+              <div class="card__moodel">
+                <h3 class="card__model-name">
+                  Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021
+                </h3>
+                <span class="card__model-prices price-filter">
+                  104 840 ₽
+                </span>
+              </div>
+
+              <button class="btn card__btn card__btn--track" type="button">
+                <svg class="cursor-click cursor-click--track">
+                  <use xlink:href="img/sprite.svg#cursor-click"></use>
+                </svg>
+
+                <span class="card__btn-text card__btn-text--track">
+                  Отслеживать
+                </span>
+              </button>
+
+            </article>
+
+            <article class="card product-filter" data-id data-model="dvuhpodvesnye-velosipedy" data-brand="bmc" data-type="alyuminij" style="background-image: url('img/novelties/novelties-itali.png');">
 
               <div class="card__header">
                 <span class="card__status card__status--sold-out">
@@ -787,14 +950,14 @@
 
               <div class="card__moodel">
                 <h3 class="card__model-name">
-                  Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021
+                  Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021
                 </h3>
-                <span class="card__model-prices">
-                  684 840 ₽
+                <span class="card__model-prices price-filter">
+                  384 840 ₽
                 </span>
               </div>
 
-              <button class="btn card__btn card__btn--track" type="button" dara-href="#">
+              <button class="btn card__btn card__btn--track" type="button">
                 <svg class="cursor-click cursor-click--track">
                   <use xlink:href="img/sprite.svg#cursor-click"></use>
                 </svg>
@@ -806,7 +969,79 @@
 
             </article>
 
-            <article class="card" style="background-image: url('img/novelties/novelties-itali.png');">
+            <article class="card product-filter" data-id data-model="gorodskie-velosipedy" data-brand="bianci" data-type="stal" style="background-image: url('img/novelties/novelties-itali.png');">
+
+              <div class="card__header">
+                <span class="card__status card__status--sold-out">
+                  Распродано
+                </span>
+              </div>
+
+              <picture class="card-model">
+                <source srcset="img/novelties/novelties-bg-1.webp" type="image/webp">
+                <img loading="lazy" src="img/novelties/novelties-bg-1.png" class="card-model__image" width="368"
+                  height="250" alt="Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021">
+              </picture>
+
+              <div class="card__moodel">
+                <h3 class="card__model-name">
+                  Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021
+                </h3>
+                <span class="card__model-prices price-filter">
+                  84 840 ₽
+                </span>
+              </div>
+
+              <button class="btn card__btn card__btn--track" type="button">
+                <svg class="cursor-click cursor-click--track">
+                  <use xlink:href="img/sprite.svg#cursor-click"></use>
+                </svg>
+
+                <span class="card__btn-text card__btn-text--track">
+                  Отслеживать
+                </span>
+              </button>
+
+            </article> -->
+
+            <!--  -->
+
+            <article class="card product-filter gornie-velosipedi bianci" data-id style="background-image: url('img/novelties/novelties-itali.png');">
+
+              <div class="card__header">
+                <span class="card__status card__status--sold-out">
+                  Распродано
+                </span>
+              </div>
+
+              <picture class="card-model">
+                <source srcset="img\triathlon\1.webp" type="image/webp">
+                <img loading="lazy" src="img\triathlon\1.png" class="card-model__image" width="368"
+                  height="250" alt="Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021">
+              </picture>
+
+              <div class="card__moodel">
+                <h3 class="card__model-name">
+                  Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021
+                </h3>
+                <span class="card__model-prices price-filter">
+                  684 840 ₽
+                </span>
+              </div>
+
+              <button class="btn card__btn card__btn--track" type="button">
+                <svg class="cursor-click cursor-click--track">
+                  <use xlink:href="img/sprite.svg#cursor-click"></use>
+                </svg>
+
+                <span class="card__btn-text card__btn-text--track">
+                  Отслеживать
+                </span>
+              </button>
+
+            </article>
+
+            <article class="card product-filter velosipedi-dlya-triatlona bmc" data-id style="background-image: url('img/novelties/novelties-itali.png');">
 
               <div class="card__header">
                 <span class="card__status card__status--sold-out">
@@ -824,12 +1059,12 @@
                 <h3 class="card__model-name">
                   Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021
                 </h3>
-                <span class="card__model-prices">
+                <span class="card__model-prices price-filter">
                   684 840 ₽
                 </span>
               </div>
 
-              <button class="btn card__btn card__btn--track" type="button" dara-href="#">
+              <button class="btn card__btn card__btn--track" type="button">
                 <svg class="cursor-click cursor-click--track">
                   <use xlink:href="img/sprite.svg#cursor-click"></use>
                 </svg>
@@ -841,21 +1076,7 @@
 
             </article>
 
-            <div class="stock-card card" style="background-image: url('img/stock-card/stock-card-bg.png');">
-
-              <div class="stock-card__info">
-
-                <span class="stock-card__promotion">Акция</span>
-
-                <strong class="stock-card__strong">Скидка 20%</strong>
-
-                <span class="stock-card__what-discount">На всю экипировку</span>
-
-              </div>
-
-            </div>
-
-            <article class="card" style="background-image: url('img/novelties/novelties-itali.png');">
+            <article class="card product-filter gravijnye-velosipedy bianci" data-id style="background-image: url('img/novelties/novelties-itali.png');">
 
               <div class="card__header">
                 <span class="card__status card__status--sold-out">
@@ -873,12 +1094,12 @@
                 <h3 class="card__model-name">
                   Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021
                 </h3>
-                <span class="card__model-prices">
-                  684 840 ₽
+                <span class="card__model-prices price-filter">
+                  104 840 ₽
                 </span>
               </div>
 
-              <button class="btn card__btn card__btn--track" type="button" dara-href="#">
+              <button class="btn card__btn card__btn--track" type="button">
                 <svg class="cursor-click cursor-click--track">
                   <use xlink:href="img/sprite.svg#cursor-click"></use>
                 </svg>
@@ -890,7 +1111,7 @@
 
             </article>
 
-            <article class="card" style="background-image: url('img/novelties/novelties-itali.png');">
+            <article class="card product-filter gornie-velosipedi bmc" data-id style="background-image: url('img/novelties/novelties-itali.png');">
 
               <div class="card__header">
                 <span class="card__status card__status--sold-out">
@@ -908,12 +1129,12 @@
                 <h3 class="card__model-name">
                   Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021
                 </h3>
-                <span class="card__model-prices">
-                  684 840 ₽
+                <span class="card__model-prices price-filter">
+                  384 840 ₽
                 </span>
               </div>
 
-              <button class="btn card__btn card__btn--track" type="button" dara-href="#">
+              <button class="btn card__btn card__btn--track" type="button">
                 <svg class="cursor-click cursor-click--track">
                   <use xlink:href="img/sprite.svg#cursor-click"></use>
                 </svg>
@@ -925,7 +1146,7 @@
 
             </article>
 
-            <article class="card" style="background-image: url('img/novelties/novelties-itali.png');">
+            <article class="card product-filter gorodskie-velosipedy bianci" data-id style="background-image: url('img/novelties/novelties-itali.png');">
 
               <div class="card__header">
                 <span class="card__status card__status--sold-out">
@@ -943,12 +1164,12 @@
                 <h3 class="card__model-name">
                   Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021
                 </h3>
-                <span class="card__model-prices">
-                  684 840 ₽
+                <span class="card__model-prices price-filter">
+                  84 840 ₽
                 </span>
               </div>
 
-              <button class="btn card__btn card__btn--track" type="button" dara-href="#">
+              <button class="btn card__btn card__btn--track" type="button">
                 <svg class="cursor-click cursor-click--track">
                   <use xlink:href="img/sprite.svg#cursor-click"></use>
                 </svg>
@@ -959,6 +1180,182 @@
               </button>
 
             </article>
+
+            <article class="card product-filter gornie-velosipedi bianci" data-id style="background-image: url('img/novelties/novelties-itali.png');">
+
+              <div class="card__header">
+                <span class="card__status card__status--sold-out">
+                  Распродано
+                </span>
+              </div>
+
+              <picture class="card-model">
+                <source srcset="img\triathlon\1.webp" type="image/webp">
+                <img loading="lazy" src="img\triathlon\1.png" class="card-model__image" width="368"
+                  height="250" alt="Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021">
+              </picture>
+
+              <div class="card__moodel">
+                <h3 class="card__model-name">
+                  Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021
+                </h3>
+                <span class="card__model-prices price-filter">
+                  684 840 ₽
+                </span>
+              </div>
+
+              <button class="btn card__btn card__btn--track" type="button">
+                <svg class="cursor-click cursor-click--track">
+                  <use xlink:href="img/sprite.svg#cursor-click"></use>
+                </svg>
+
+                <span class="card__btn-text card__btn-text--track">
+                  Отслеживать
+                </span>
+              </button>
+
+            </article>
+
+            <article class="card product-filter velosipedi-dlya-triatlona bmc" data-id style="background-image: url('img/novelties/novelties-itali.png');">
+
+              <div class="card__header">
+                <span class="card__status card__status--sold-out">
+                  Распродано
+                </span>
+              </div>
+
+              <picture class="card-model">
+                <source srcset="img/novelties/novelties-bg-2.webp" type="image/webp">
+                <img loading="lazy" src="img/novelties/novelties-bg-2.png" class="card-model__image" width="368"
+                  height="250" alt="Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021">
+              </picture>
+
+              <div class="card__moodel">
+                <h3 class="card__model-name">
+                  Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021
+                </h3>
+                <span class="card__model-prices price-filter">
+                  684 840 ₽
+                </span>
+              </div>
+
+              <button class="btn card__btn card__btn--track" type="button">
+                <svg class="cursor-click cursor-click--track">
+                  <use xlink:href="img/sprite.svg#cursor-click"></use>
+                </svg>
+
+                <span class="card__btn-text card__btn-text--track">
+                  Отслеживать
+                </span>
+              </button>
+
+            </article>
+
+            <article class="card product-filter gravijnye-velosipedy bianci" data-id style="background-image: url('img/novelties/novelties-itali.png');">
+
+              <div class="card__header">
+                <span class="card__status card__status--sold-out">
+                  Распродано
+                </span>
+              </div>
+
+              <picture class="card-model">
+                <source srcset="img/novelties/novelties-bg-3.webp" type="image/webp">
+                <img loading="lazy" src="img/novelties/novelties-bg-3.png" class="card-model__image" width="368"
+                  height="250" alt="Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021">
+              </picture>
+
+              <div class="card__moodel">
+                <h3 class="card__model-name">
+                  Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021
+                </h3>
+                <span class="card__model-prices price-filter">
+                  104 840 ₽
+                </span>
+              </div>
+
+              <button class="btn card__btn card__btn--track" type="button">
+                <svg class="cursor-click cursor-click--track">
+                  <use xlink:href="img/sprite.svg#cursor-click"></use>
+                </svg>
+
+                <span class="card__btn-text card__btn-text--track">
+                  Отслеживать
+                </span>
+              </button>
+
+            </article>
+
+            <article class="card product-filter gornie-velosipedi bmc" data-id style="background-image: url('img/novelties/novelties-itali.png');">
+
+              <div class="card__header">
+                <span class="card__status card__status--sold-out">
+                  Распродано
+                </span>
+              </div>
+
+              <picture class="card-model">
+                <source srcset="img/novelties/novelties-bg-1.webp" type="image/webp">
+                <img loading="lazy" src="img/novelties/novelties-bg-1.png" class="card-model__image" width="368"
+                  height="250" alt="Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021">
+              </picture>
+
+              <div class="card__moodel">
+                <h3 class="card__model-name">
+                  Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021
+                </h3>
+                <span class="card__model-prices price-filter">
+                  384 840 ₽
+                </span>
+              </div>
+
+              <button class="btn card__btn card__btn--track" type="button">
+                <svg class="cursor-click cursor-click--track">
+                  <use xlink:href="img/sprite.svg#cursor-click"></use>
+                </svg>
+
+                <span class="card__btn-text card__btn-text--track">
+                  Отслеживать
+                </span>
+              </button>
+
+            </article>
+
+            <article class="card product-filter gorodskie-velosipedy bianci" data-id style="background-image: url('img/novelties/novelties-itali.png');">
+
+              <div class="card__header">
+                <span class="card__status card__status--sold-out">
+                  Распродано
+                </span>
+              </div>
+
+              <picture class="card-model">
+                <source srcset="img/novelties/novelties-bg-1.webp" type="image/webp">
+                <img loading="lazy" src="img/novelties/novelties-bg-1.png" class="card-model__image" width="368"
+                  height="250" alt="Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021">
+              </picture>
+
+              <div class="card__moodel">
+                <h3 class="card__model-name">
+                  Bianchi AQUILA L DURA ACE DI2 TEAM JUMBO 2021
+                </h3>
+                <span class="card__model-prices price-filter">
+                  84 840 ₽
+                </span>
+              </div>
+
+              <button class="btn card__btn card__btn--track" type="button">
+                <svg class="cursor-click cursor-click--track">
+                  <use xlink:href="img/sprite.svg#cursor-click"></use>
+                </svg>
+
+                <span class="card__btn-text card__btn-text--track">
+                  Отслеживать
+                </span>
+              </button>
+
+            </article>
+            <!--  -->
 
           </div>
 
@@ -1022,7 +1419,7 @@
 
     <div class="footer__top">
 
-        <div class="container-fluid" style="background-image: url('img/footer/pic.png');">
+        <div class="container-fluid" style="background-image: url('img/footer/pic.webp');">
 
             <div class="site-container">
 
@@ -1030,7 +1427,7 @@
                     Подпишитесь на наши новости
                 </h2>
 
-                <form class="form">
+                <div class="form">
 
                     <label class="form__label">
                         <input type="text" name="Имя" class="input-reset form__input" placeholder="E-mail">
@@ -1052,7 +1449,7 @@
                         </div>
                     </div>
 
-                </form>
+                </div>
 
                 <label class="custom-checkbox custom-checkbox--policy">
                     <input type="checkbox"
@@ -1073,16 +1470,16 @@
         <div class="footer__inner">
 
             <div class="footer__column">
-                <a class="logo footer__logo">
+                <div class="logo footer__logo">
                     <img loading="lazy" src="img/svg-icon/logo.svg" class="image" width="87" height="49"
 						alt="Логотип компаний world-bike">
-                </a>
+                </div>
                 <p class="footer__logo-description">
                     Компания World-bikes <br> специализируется на продаже <br> товаров для велосипедного спорта.
                 </p>
             </div>
 
-            <div class="footer__column">
+            <div class="footer__column footer__column--catalog">
                 <h3 class="footer__head">
                     Каталог
                 </h3>
@@ -1122,7 +1519,7 @@
                 </nav>
             </div>
 
-            <div class="footer__column">
+            <div class="footer__column footer__column--clients">
                 <h3 class="footer__head">
                     Для клиента
                 </h3>
